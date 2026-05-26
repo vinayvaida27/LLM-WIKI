@@ -311,6 +311,26 @@ def _format_context(chunks: List[Dict[str, Any]]) -> str:
     return "\n\n".join(blocks) if blocks else "(no relevant context found)"
 
 
+def _log_chat_request(
+    endpoint: str,
+    question: str,
+    top_k: int,
+    chunks: List[Dict[str, Any]],
+) -> None:
+    payload = {
+        "event": "chat_request",
+        "endpoint": endpoint,
+        "question": question[:500],
+        "top_k": top_k,
+        "source_count": len(chunks),
+        "sources": [
+            {"path": c.get("path"), "layer": c.get("layer"), "score": c.get("score")}
+            for c in chunks[:5]
+        ],
+    }
+    log.info(json.dumps(payload, ensure_ascii=False))
+
+
 def _extract_user_question(messages: List[Message]) -> str:
     for msg in reversed(messages):
         if msg.role != "user":
@@ -475,7 +495,9 @@ def reload_corpus() -> Dict[str, Any]:
 
 @app.post("/chat")
 def simple_chat(req: SimpleChatRequest) -> Dict[str, Any]:
-    chunks = corpus.search(req.message, req.top_k or DEFAULT_TOP_K)
+    top_k = req.top_k or DEFAULT_TOP_K
+    chunks = corpus.search(req.message, top_k)
+    _log_chat_request("/chat", req.message, top_k, chunks)
     if not chunks:
         raise HTTPException(
             status_code=404,
@@ -508,7 +530,9 @@ def chat_completions(req: ChatCompletionRequest):
     if not question.strip():
         raise HTTPException(status_code=400, detail="No user message found.")
 
-    chunks = corpus.search(question, req.top_k or DEFAULT_TOP_K)
+    top_k = req.top_k or DEFAULT_TOP_K
+    chunks = corpus.search(question, top_k)
+    _log_chat_request("/v1/chat/completions", question, top_k, chunks)
     context = _format_context(chunks) if chunks else "(no relevant context found)"
     messages = _build_llm_messages(question, context)
 
