@@ -29,6 +29,14 @@ gcloud artifacts repositories create $REPO \
 
 If it says the repo already exists, that is fine.
 
+## Secret Format
+
+When creating or updating `OPENAI_API_KEY`, use `printf` so the secret does not contain a trailing newline:
+
+```bash
+printf '%s' 'YOUR_OPENAI_API_KEY' | gcloud secrets versions add OPENAI_API_KEY --data-file=-
+```
+
 ## 3. Build Backend Image
 
 Run from the repo root:

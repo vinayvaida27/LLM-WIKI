@@ -52,6 +52,15 @@ from pydantic import BaseModel, Field
 
 load_dotenv()
 
+for secret_name in (
+    "OPENAI_API_KEY",
+    "ANTHROPIC_API_KEY",
+    "GEMINI_API_KEY",
+    "GOOGLE_API_KEY",
+):
+    if os.getenv(secret_name):
+        os.environ[secret_name] = os.environ[secret_name].strip()
+
 LLM_WIKI_ROOT = Path(os.getenv("LLM_WIKI_ROOT", ".")).resolve()
 MODEL_NAME = os.getenv("MODEL_NAME", "gpt-4.1-mini")
 DEFAULT_TEMPERATURE = float(os.getenv("DEFAULT_TEMPERATURE", "0.2"))
