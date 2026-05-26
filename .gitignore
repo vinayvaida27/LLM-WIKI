@@ -1,0 +1,22 @@
+.DS_Store
+.claude/
+.autoresearch/
+llm-wiki/retrieval/query_logs.jsonl
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+
+# Secrets / env
+.env
+*.env
+*.env.local
+
+# Frontend (Next.js / Node)
+frontend/node_modules/
+frontend/.next/
+frontend/.supabase/
+frontend/*.log
+frontend/*.tsbuildinfo

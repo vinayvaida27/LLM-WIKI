@@ -1,0 +1,88 @@
+{
+  "title": "MLCB KG Extraction Schema",
+  "description": "Instructions for extracting entities and relationships from MLCB lecture transcripts",
+  "version": "1.0.0",
+  "generated": "2026-05-25",
+
+  "extraction_pipeline": {
+    "pass_1_source_inventory": {
+      "purpose": "List all Raw/Sources/ files, confirm metadata, record lecture-to-file mapping.",
+      "output": "lecture_index.json"
+    },
+    "pass_2_structural_extraction": {
+      "purpose": "Extract lecture structure: sections, subsections, topics per lecture.",
+      "output": "Lecture frontmatter + section outlines"
+    },
+    "pass_3_entity_extraction": {
+      "purpose": "Identify all entities per lecture. Classify by type from entity_ontology.yaml.",
+      "rules": [
+        "Bold or title-cased terms are extraction candidates.",
+        "Named algorithms, models, datasets, and tools are always extracted.",
+        "Biological terms in bold or defined in context are extracted as biological_entity.",
+        "Assign preliminary id in kebab-case from label."
+      ],
+      "output": "graph_nodes.jsonl (draft)"
+    },
+    "pass_4_relationship_extraction": {
+      "purpose": "Identify relationships between extracted entities using context.",
+      "rules": [
+        "Use only relationship types from relationship_ontology.yaml.",
+        "Record source file path as evidence for each edge.",
+        "Assign weight 0.9 for explicit statements, 0.7 for implied."
+      ],
+      "output": "graph_edges.jsonl (draft)"
+    },
+    "pass_5_canonicalization": {
+      "purpose": "Merge duplicate nodes. Unify aliases. Normalize ids.",
+      "rules": [
+        "If two nodes share a label or alias, merge into one with combined sources.",
+        "Canonical id is the most common or most descriptive name in kebab-case.",
+        "Record all alternate names in aliases field."
+      ],
+      "output": "entity_aliases.json, graph_nodes.jsonl (canonical)"
+    },
+    "pass_6_scoring": {
+      "purpose": "Compute importance scores for nodes and confidence for edges.",
+      "rules": [
+        "Node importance = (lecture_count * 0.4) + (in_degree * 0.3) + (out_degree * 0.3), normalized.",
+        "Edge weight = stated 0.9, implied 0.7, inferred 0.5."
+      ],
+      "output": "Scored fields on nodes and edges"
+    },
+    "pass_7_wiki_update": {
+      "purpose": "Ensure every high-importance node has a compiled Wiki page.",
+      "rules": [
+        "Nodes with importance >= 0.6 must have wiki_page.",
+        "Create stub pages for missing high-importance entities.",
+        "Add KG Extraction section to each lecture file."
+      ],
+      "output": "Updated Wiki/ pages"
+    },
+    "pass_8_retrieval_artifact_generation": {
+      "purpose": "Serialize final KG into retrieval-ready formats.",
+      "output": [
+        "knowledge_graph.json",
+        "knowledge_graph_minimal.json",
+        "cluster_map.json",
+        "entity_index.json",
+        "retrieval_chunks.jsonl"
+      ]
+    },
+    "pass_9_validation": {
+      "purpose": "Check referential integrity, orphan nodes, missing sources.",
+      "checks": [
+        "Every edge source and target must exist as a node id.",
+        "Every node must have at least one source.",
+        "No two nodes share an id.",
+        "All aliases are unique across the alias map."
+      ],
+      "output": "Wiki/Logs/validation_report.md"
+    }
+  },
+
+  "entity_extraction_prompts": {
+    "identify_entities": "From this lecture text, list all named entities. For each: id (kebab-case), label, type (from ontology), 1-sentence description, and the sentence from the text that supports it.",
+    "classify_type": "Given this entity label and context sentence, assign exactly one type: concept, method, model, biological_entity, data_type, application, tool, lecture, topic, person, equation.",
+    "extract_relationships": "For each pair of entities in this excerpt, identify if a relationship from the relationship ontology applies. Output: source_id, relation, target_id, supporting_sentence."
+  }
+}

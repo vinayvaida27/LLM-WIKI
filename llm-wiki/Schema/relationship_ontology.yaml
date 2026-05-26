@@ -1,0 +1,103 @@
+---
+# MLCB Knowledge Graph - Relationship Ontology
+# Source: Machine Learning for Computational Biology, MIT MLCB Fall 2024
+# Generated: 2026-05-25
+# Purpose: Defines edge types for the knowledge graph
+
+relationship_types:
+
+  IS_A:
+    description: Subtype / inheritance. Source is a specific instance of target.
+    domain: [concept, method, model, biological_entity, data_type]
+    range:  [concept, method, model, biological_entity, data_type]
+    example: "K-Means IS_A Clustering Method"
+
+  HAS_PART:
+    description: Compositional containment. Target is a component of source.
+    domain: [concept, method, model, biological_entity]
+    range:  [concept, method, model, biological_entity]
+    example: "AlphaFold2 HAS_PART Evoformer"
+
+  USES:
+    description: Source method or model uses target technique or data type.
+    domain: [method, model, application]
+    range:  [method, concept, data_type, equation]
+    example: "AlphaFold2 USES Attention Mechanism"
+
+  APPLIED_TO:
+    description: Method or model is applied to target biological entity or data type.
+    domain: [method, model]
+    range:  [biological_entity, data_type, application]
+    example: "HMM APPLIED_TO Chromatin Segmentation"
+
+  PRODUCES:
+    description: Source method or model produces target output artifact or data type.
+    domain: [method, model]
+    range:  [data_type, biological_entity, concept]
+    example: "scRNA-seq PRODUCES Gene Expression Matrix"
+
+  ENABLES:
+    description: Source concept, method, or model enables target application.
+    domain: [concept, method, model]
+    range:  [application, concept]
+    example: "GNN ENABLES Drug Property Prediction"
+
+  TAUGHT_IN:
+    description: Entity is primarily introduced and taught in target lecture.
+    domain: [concept, method, model, biological_entity, data_type, application, tool]
+    range:  [lecture]
+    example: "Viterbi Algorithm TAUGHT_IN Lecture 5"
+
+  EXTENDS:
+    description: Source builds on or generalizes target.
+    domain: [method, model, concept]
+    range:  [method, model, concept]
+    example: "SELFIES EXTENDS SMILES"
+
+  CONTRASTS_WITH:
+    description: Source and target are compared or contrasted in lectures.
+    domain: [concept, method, model, data_type]
+    range:  [concept, method, model, data_type]
+    example: "Data-Driven CONTRASTS_WITH Hypothesis-Driven"
+
+  RELATED_TO:
+    description: General thematic or conceptual relatedness not captured by other types.
+    domain: [any]
+    range:  [any]
+    example: "GWAS RELATED_TO Polygenic Risk Score"
+
+  BASED_ON:
+    description: Source is mathematically or theoretically grounded in target.
+    domain: [method, model, equation]
+    range:  [concept, equation, method]
+    example: "EM BASED_ON Maximum Likelihood Estimation"
+
+  LEARNS_FROM:
+    description: Model is trained on or uses target data type.
+    domain: [model]
+    range:  [data_type]
+    example: "ESM-2 LEARNS_FROM Protein Sequences"
+
+  REPRESENTED_BY:
+    description: Biological entity is represented computationally as target data type.
+    domain: [biological_entity]
+    range:  [data_type, concept]
+    example: "Molecule REPRESENTED_BY Molecular Graph"
+
+  MEMBER_OF:
+    description: Entity belongs to target topic cluster or lecture group.
+    domain: [concept, method, model, biological_entity, data_type, application]
+    range:  [topic]
+    example: "GWAS MEMBER_OF Genetics and Disease topic"
+
+  DISCOVERED_BY:
+    description: Method or model was developed by target person.
+    domain: [method, model]
+    range:  [person]
+    example: "AlphaFold DISCOVERED_BY DeepMind"
+
+  PRECEDED_BY:
+    description: Source is a successor or improvement over target.
+    domain: [method, model]
+    range:  [method, model]
+    example: "AlphaFold2 PRECEDED_BY AlphaFold"

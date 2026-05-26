@@ -1,0 +1,132 @@
+{
+  "_meta": {
+    "description": "Lecture-to-entity and lecture-to-source mapping. Used to retrieve all entities taught in a given lecture.",
+    "generated": "2026-05-25"
+  },
+  "1": {
+    "title": "Course Introduction",
+    "module": 0,
+    "source": "Raw/Sources/lecture_01_course_introduction.md",
+    "wiki_page": "Wiki/Topics/Lectures/lecture-01-course-introduction.md",
+    "entities": ["representation-learning", "latent-space", "self-supervised-learning", "multimodal-foundation-models", "data-driven-paradigm", "hypothesis-driven-paradigm", "graph-neural-network", "large-language-model", "gibbs-sampling", "expectation-maximization", "deep-learning", "dna", "rna", "gene", "computational-biology"]
+  },
+  "2": {
+    "title": "Expression Analysis and Clustering",
+    "module": 1,
+    "source": "Raw/Sources/lecture_02_expression_analysis_and_clustering.md",
+    "wiki_page": "Wiki/Topics/Lectures/lecture-02-expression-analysis-and-clustering.md",
+    "entities": ["gene-expression-matrix", "rna-seq", "k-means-clustering", "gaussian-mixture-model", "expectation-maximization", "pca", "umap", "t-sne", "gene", "rna"]
+  },
+  "3": {
+    "title": "Single-Cell Analysis",
+    "module": 1,
+    "source": "Raw/Sources/lecture_03_single_cell_analysis.md",
+    "wiki_page": "Wiki/Topics/Lectures/lecture-03-single-cell-analysis.md",
+    "entities": ["scrna-seq", "gene-expression-matrix", "cell-type-annotation", "trajectory-inference", "scanpy", "pca", "umap", "rna"]
+  },
+  "4": {
+    "title": "Alignment",
+    "module": 1,
+    "source": "Raw/Sources/lecture_04_alignment.md",
+    "wiki_page": "Wiki/Topics/Lectures/lecture-04-alignment.md",
+    "entities": ["sequence-alignment", "dynamic-programming", "blast", "scoring-matrix", "motif-finding", "meme", "dna-sequence", "dna"]
+  },
+  "5": {
+    "title": "Epigenomics - HMMs",
+    "module": 1,
+    "source": "Raw/Sources/lecture_05_epigenomics_hmms.md",
+    "wiki_page": "Wiki/Topics/Lectures/lecture-05-epigenomics-hmms.md",
+    "entities": ["hidden-markov-model", "viterbi-algorithm", "baum-welch", "expectation-maximization", "chromatin", "chip-seq", "atac-seq", "histone-modification", "chromhmm", "dna-methylation", "cpg-island", "dynamic-programming", "dna"]
+  },
+  "6": {
+    "title": "Regulatory Circuitry",
+    "module": 1,
+    "source": "Raw/Sources/lecture_06_regulatory_circuitry.md",
+    "wiki_page": "Wiki/Topics/Lectures/lecture-06-regulatory-circuitry.md",
+    "entities": ["transcription-factor", "enhancer", "promoter", "motif-finding", "gibbs-sampling", "meme", "encode", "chip-seq", "atac-seq", "chromatin", "disease-circuitry"]
+  },
+  "7": {
+    "title": "Regulatory Networks",
+    "module": 1,
+    "source": "Raw/Sources/lecture_07_regulatory_networks.md",
+    "wiki_page": "Wiki/Topics/Lectures/lecture-07-regulatory-networks.md",
+    "entities": ["gene-regulatory-network", "network-inference", "network-motif", "transcription-factor", "gene", "scenic"]
+  },
+  "8": {
+    "title": "Intro to Protein Structure",
+    "module": 2,
+    "source": "Raw/Sources/lecture_08_intro_to_protein_structure.md",
+    "wiki_page": "Wiki/Topics/Lectures/lecture-08-intro-to-protein-structure.md",
+    "entities": ["protein-structure", "alpha-helix", "beta-sheet", "contact-map", "protein", "casp"]
+  },
+  "9": {
+    "title": "Protein Folding Algorithms",
+    "module": 2,
+    "source": "Raw/Sources/lecture_09_protein_folding_algorithms.md",
+    "wiki_page": "Wiki/Topics/Lectures/lecture-09-protein-folding-algorithms.md",
+    "entities": ["protein-structure", "contact-map", "multiple-sequence-alignment", "coevolution-analysis", "dynamic-programming", "rosetta", "alphafold1", "casp", "benchmarking"]
+  },
+  "10": {
+    "title": "Protein Structure with Transformers",
+    "module": 2,
+    "source": "Raw/Sources/lecture_10_protein_structure_with_transformers.md",
+    "wiki_page": "Wiki/Topics/Lectures/lecture-10-protein-structure-with-transformers.md",
+    "entities": ["alphafold2", "evoformer", "attention-mechanism", "multiple-sequence-alignment", "protein-structure", "lddt-score", "casp", "transformer"]
+  },
+  "11": {
+    "title": "Protein Language Models",
+    "module": 2,
+    "source": "Raw/Sources/lecture_11_protein_language_models.md",
+    "wiki_page": "Wiki/Topics/Lectures/lecture-11-protein-language-models.md",
+    "entities": ["esm2", "masked-language-modeling", "zero-shot-fitness-prediction", "protein-sequence", "self-supervised-learning", "representation-learning", "attention-mechanism", "transformer", "transfer-learning", "protein-design", "large-language-model", "cross-entropy-loss", "benchmarking"]
+  },
+  "12": {
+    "title": "DNA Language Models",
+    "module": 2,
+    "source": "Raw/Sources/lecture_12_dna_language_models.md",
+    "wiki_page": "Wiki/Topics/Lectures/lecture-12-dna-language-models.md",
+    "entities": ["dnabert", "nucleotide-transformer", "hyena", "caduceus", "masked-language-modeling", "dna-sequence", "self-supervised-learning", "attention-mechanism", "transformer", "transfer-learning"]
+  },
+  "13": {
+    "title": "Drug Development Intro",
+    "module": 3,
+    "source": "Raw/Sources/lecture_13_drug_development_intro.md",
+    "wiki_page": "Wiki/Topics/Lectures/lecture-13-drug-development-intro.md",
+    "entities": ["drug-discovery", "admet", "virtual-screening", "molecular-docking", "drug-target", "small-molecule"]
+  },
+  "14": {
+    "title": "Chemistry GNNs",
+    "module": 3,
+    "source": "Raw/Sources/lecture_14_chemistry_gnns.md",
+    "wiki_page": "Wiki/Topics/Lectures/lecture-14-chemistry-gnns.md",
+    "entities": ["smiles", "selfies", "inchi", "smarts", "molecular-graph", "graph-neural-network", "message-passing-neural-network", "schnet", "dimenet", "drug-discovery", "small-molecule"]
+  },
+  "15": {
+    "title": "Generating New Molecules",
+    "module": 3,
+    "source": "Raw/Sources/lecture_15_generating_new_molecules.md",
+    "wiki_page": "Wiki/Topics/Lectures/lecture-15-generating-new-molecules.md",
+    "entities": ["variational-autoencoder", "diffusion-model", "normalizing-flow", "reinforcement-learning-drug", "elbo", "latent-space", "drug-discovery", "small-molecule"]
+  },
+  "16": {
+    "title": "Training Neural Networks",
+    "module": 4,
+    "source": "Raw/Sources/lecture_16_training_neural_networks.md",
+    "wiki_page": "Wiki/Topics/Lectures/lecture-16-training-neural-networks.md",
+    "entities": ["backpropagation", "stochastic-gradient-descent", "adam-optimizer", "batch-normalization", "dropout", "transfer-learning", "deep-learning", "cross-entropy-loss"]
+  },
+  "17": {
+    "title": "Genetics, Disease, GWAS, PRS, Mechanism",
+    "module": 4,
+    "source": "Raw/Sources/lecture_17_genetics_disease_gwas_prs_mechanism.md",
+    "wiki_page": "Wiki/Topics/Lectures/lecture-17-genetics-disease-gwas-prs-mechanism.md",
+    "entities": ["gwas", "snp", "polygenic-risk-score", "linkage-disequilibrium", "eqtl", "mendelian-randomization", "manhattan-plot"]
+  },
+  "18": {
+    "title": "Disease Mechanism, Circuitry, eQTLs, Heritability",
+    "module": 4,
+    "source": "Raw/Sources/lecture_18_disease_mechanism_circuitry_eqtls_heritability.md",
+    "wiki_page": "Wiki/Topics/Lectures/lecture-18-disease-mechanism-circuitry-eqtls-heritability.md",
+    "entities": ["heritability", "ld-score-regression", "colocalization", "fine-mapping", "eqtl", "disease-circuitry", "enhancer", "transcription-factor"]
+  }
+}

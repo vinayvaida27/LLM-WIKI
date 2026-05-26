@@ -1,0 +1,86 @@
+{
+  "_meta": {
+    "description": "Thematic cluster definitions. Each cluster groups related entities for navigation and retrieval.",
+    "generated": "2026-05-25"
+  },
+  "clusters": {
+    "foundations": {
+      "label": "ML Foundations",
+      "description": "Core ML concepts that apply across all biological domains.",
+      "lectures": [1, 16],
+      "entities": ["representation-learning", "latent-space", "self-supervised-learning", "multimodal-foundation-models", "data-driven-paradigm", "hypothesis-driven-paradigm", "deep-learning", "benchmarking"]
+    },
+    "classical-ml": {
+      "label": "Classical ML Methods",
+      "description": "Pre-deep-learning algorithms taught in the course: EM, HMMs, k-means, dynamic programming.",
+      "lectures": [1, 2, 4, 5],
+      "entities": ["expectation-maximization", "k-means-clustering", "gaussian-mixture-model", "pca", "umap", "t-sne", "hidden-markov-model", "viterbi-algorithm", "baum-welch", "gibbs-sampling", "dynamic-programming"]
+    },
+    "deep-learning": {
+      "label": "Deep Learning",
+      "description": "Neural network architectures, training procedures, and optimization.",
+      "lectures": [10, 11, 12, 16],
+      "entities": ["deep-learning", "transformer", "attention-mechanism", "masked-language-modeling", "backpropagation", "stochastic-gradient-descent", "adam-optimizer", "batch-normalization", "dropout", "transfer-learning", "cross-entropy-loss"]
+    },
+    "generative-models": {
+      "label": "Generative Models",
+      "description": "Models that learn to generate new data: VAEs, diffusion, flows, RL.",
+      "lectures": [15],
+      "entities": ["variational-autoencoder", "diffusion-model", "normalizing-flow", "reinforcement-learning-drug", "elbo"]
+    },
+    "genomics": {
+      "label": "Genomics",
+      "description": "Gene expression, bulk and single-cell transcriptomics.",
+      "lectures": [2, 3],
+      "entities": ["gene", "dna", "rna", "gene-expression-matrix", "rna-seq", "scrna-seq", "cell-type-annotation", "trajectory-inference", "scanpy"]
+    },
+    "sequence-analysis": {
+      "label": "Sequence Analysis",
+      "description": "Alignment, motif finding, and database search.",
+      "lectures": [4],
+      "entities": ["sequence-alignment", "dynamic-programming", "blast", "scoring-matrix", "motif-finding", "meme", "dna-sequence"]
+    },
+    "epigenomics": {
+      "label": "Epigenomics",
+      "description": "Chromatin state, histone modifications, DNA methylation, ATAC-seq, ChIP-seq.",
+      "lectures": [5, 6],
+      "entities": ["chromatin", "chip-seq", "atac-seq", "histone-modification", "chromhmm", "dna-methylation", "cpg-island"]
+    },
+    "regulatory-genomics": {
+      "label": "Regulatory Genomics",
+      "description": "Transcription factors, enhancers, promoters, gene regulatory networks.",
+      "lectures": [6, 7],
+      "entities": ["transcription-factor", "enhancer", "promoter", "gene-regulatory-network", "network-inference", "network-motif", "motif-finding", "encode", "scenic"]
+    },
+    "protein": {
+      "label": "Protein Structure and Function",
+      "description": "Protein structure prediction, folding, language models, design.",
+      "lectures": [8, 9, 10, 11],
+      "entities": ["protein", "protein-structure", "alpha-helix", "beta-sheet", "contact-map", "multiple-sequence-alignment", "coevolution-analysis", "alphafold1", "alphafold2", "evoformer", "rosetta", "casp", "lddt-score", "protein-sequence", "protein-design"]
+    },
+    "genomics-ml": {
+      "label": "Genomic Language Models",
+      "description": "Transformer-based models trained on DNA/RNA sequences.",
+      "lectures": [12],
+      "entities": ["dnabert", "nucleotide-transformer", "hyena", "caduceus", "dna-sequence"]
+    },
+    "drug-discovery": {
+      "label": "Drug Discovery and Chemistry",
+      "description": "Molecular representations, GNNs for chemistry, drug generation, ADMET.",
+      "lectures": [13, 14, 15],
+      "entities": ["drug-discovery", "admet", "virtual-screening", "molecular-docking", "drug-target", "small-molecule", "smiles", "selfies", "inchi", "smarts", "molecular-graph", "message-passing-neural-network", "schnet", "dimenet"]
+    },
+    "genetics-disease": {
+      "label": "Genetics and Disease",
+      "description": "GWAS, SNPs, polygenic risk scores, eQTLs, heritability, disease circuitry.",
+      "lectures": [17, 18],
+      "entities": ["gwas", "snp", "polygenic-risk-score", "linkage-disequilibrium", "eqtl", "heritability", "ld-score-regression", "colocalization", "fine-mapping", "mendelian-randomization", "disease-circuitry", "manhattan-plot"]
+    },
+    "course-meta": {
+      "label": "Course Structure",
+      "description": "Course modules, instructors, and overall computational biology framing.",
+      "lectures": [1],
+      "entities": ["computational-biology", "module-1-genomics", "module-2-protein", "module-3-chemistry", "module-4-genetics-disease", "manolis-kellis", "eric-alm"]
+    }
+  }
+}

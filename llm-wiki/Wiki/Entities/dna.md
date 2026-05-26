@@ -1,0 +1,59 @@
+﻿---
+tags:
+  - "entity"
+topics:
+  - "MLCB"
+status: updated
+created: 2026-05-24
+updated: 2026-05-24
+sources:
+  - "Raw/Sources/lecture_01_course_introduction.md"
+  - "Raw/Sources/lecture_02_expression_analysis_and_clustering.md"
+  - "Raw/Sources/lecture_03_single_cell_analysis.md"
+  - "Raw/Sources/lecture_04_alignment.md"
+  - "Raw/Sources/lecture_05_epigenomics_hmms.md"
+  - "Raw/Sources/lecture_06_regulatory_circuitry.md"
+  - "Raw/Sources/lecture_07_regulatory_networks.md"
+  - "Raw/Sources/lecture_08_intro_to_protein_structure.md"
+  - "Raw/Sources/lecture_09_protein_folding_algorithms.md"
+  - "Raw/Sources/lecture_10_protein_structure_with_transformers.md"
+  - "Raw/Sources/lecture_11_protein_language_models.md"
+  - "Raw/Sources/lecture_12_dna_language_models.md"
+  - "Raw/Sources/lecture_13_drug_development_intro.md"
+  - "Raw/Sources/lecture_14_chemistry_gnns.md"
+  - "Raw/Sources/lecture_15_generating_new_molecules.md"
+  - "Raw/Sources/lecture_16_training_neural_networks.md"
+  - "Raw/Sources/lecture_17_genetics_disease_gwas_prs_mechanism.md"
+  - "Raw/Sources/lecture_18_disease_mechanism_circuitry_eqtls_heritability.md"
+source_count: 18
+aliases:
+  - "DNA"
+---
+
+# DNA
+
+## Definition
+DNA is a high-value MLCB entity or vocabulary anchor.
+
+## Simple Explanation
+For a machine learning learner, this entity is important because it becomes a data type, model input, prediction target, biological mechanism, or interpretation endpoint.
+
+## Why It Matters in MLCB
+It appears across the course as part of the bridge between biological systems and computational models.
+
+## Lecture References
+Use [[mlcb-2024-computational-biology]] and the lecture pages to find source-grounded appearances.
+
+
+## Graph Links
+
+### Parent Topics
+- [[topic-epigenomics|Epigenomics]]
+
+## Related Pages
+- [[mlcb-biology-for-ml-students]]
+- [[mlcb-methods-map]]
+- [[mlcb-cross-lecture-connections]]
+
+## Example From Lecture
+See the linked lecture pages. If a specific example is not clearly present in the available source, do not invent one.

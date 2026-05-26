@@ -1,0 +1,123 @@
+---
+# MLCB Knowledge Graph - Entity Ontology
+# Source: Machine Learning for Computational Biology, MIT MLCB Fall 2024
+# Generated: 2026-05-25
+# Purpose: Defines entity types, required fields, and descriptions for KG construction
+
+entity_types:
+
+  concept:
+    description: >
+      Abstract ideas, paradigms, and theoretical constructs taught in the course.
+      Examples: representation learning, latent space, self-supervised learning.
+    required_fields: [id, type, label, description, lectures]
+    optional_fields: [aliases, related_concepts, wiki_page]
+    examples:
+      - Representation Learning
+      - Latent Space
+      - Self-Supervised Learning
+      - Multimodal Embeddings
+
+  method:
+    description: >
+      Algorithms, computational procedures, and analytical techniques. Methods
+      are concrete implementable procedures, distinct from high-level concepts.
+      Examples: k-means clustering, Viterbi algorithm, BLAST.
+    required_fields: [id, type, label, description, lectures]
+    optional_fields: [aliases, inputs, outputs, complexity, wiki_page]
+    examples:
+      - K-Means Clustering
+      - Expectation-Maximization
+      - Hidden Markov Model
+      - Viterbi Algorithm
+      - Dynamic Programming
+
+  model:
+    description: >
+      Named trained models, model architectures, or model families.
+      Examples: AlphaFold2, ESM-2, DNABERT, Evoformer.
+    required_fields: [id, type, label, description, lectures]
+    optional_fields: [aliases, architecture, tasks, wiki_page, year]
+    examples:
+      - AlphaFold2
+      - ESM-2
+      - DNABERT
+      - Nucleotide Transformer
+
+  biological_entity:
+    description: >
+      Biological structures, molecules, cell types, processes, or organisms
+      that are central subjects of computational analysis.
+      Examples: DNA, RNA, protein, chromatin, transcription factor.
+    required_fields: [id, type, label, description, lectures]
+    optional_fields: [aliases, level, organism, wiki_page]
+    examples:
+      - DNA
+      - RNA
+      - Protein
+      - Chromatin
+      - Transcription Factor
+
+  data_type:
+    description: >
+      Experimental data modalities and file formats used as input to
+      computational methods. Examples: scRNA-seq, ChIP-seq, SMILES.
+    required_fields: [id, type, label, description, lectures]
+    optional_fields: [aliases, format, assay, wiki_page]
+    examples:
+      - scRNA-seq
+      - ChIP-seq
+      - ATAC-seq
+      - SMILES
+      - Protein Contact Map
+
+  application:
+    description: >
+      High-level biological or clinical goals that methods and models serve.
+      Examples: drug discovery, disease prediction, protein design.
+    required_fields: [id, type, label, description, lectures]
+    optional_fields: [aliases, domain, wiki_page]
+    examples:
+      - Drug Discovery
+      - Disease Prediction
+      - Protein Design
+      - Gene Regulation Inference
+
+  tool:
+    description: >
+      Named software packages, databases, or frameworks.
+      Examples: BLAST, Scanpy, ChromHMM, MEME.
+    required_fields: [id, type, label, description, lectures]
+    optional_fields: [aliases, language, url, wiki_page]
+    examples:
+      - BLAST
+      - Scanpy
+      - ChromHMM
+      - MEME
+      - RDKit
+
+  lecture:
+    description: >
+      A single course lecture unit, identified by number and title.
+    required_fields: [id, type, label, number, title, module]
+    optional_fields: [source_file, video_url, slides_url]
+
+  topic:
+    description: >
+      Major thematic domains that group lectures and concepts.
+      Examples: Genomics, Epigenomics, Protein Structure, Drug Discovery.
+    required_fields: [id, type, label, description]
+    optional_fields: [lectures, wiki_page]
+
+  person:
+    description: >
+      Named researchers, instructors, or authors explicitly referenced.
+    required_fields: [id, type, label, role]
+    optional_fields: [affiliation, lectures]
+
+  equation:
+    description: >
+      Named mathematical equations or loss functions central to methods.
+      Examples: ELBO, cross-entropy, LDDT score formula.
+    required_fields: [id, type, label, description, latex]
+    optional_fields: [lectures, method]

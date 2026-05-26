@@ -1,0 +1,2364 @@
+﻿---
+tags:
+  - "project"
+topics:
+  - "MLCB"
+  - "topic backlog"
+status: updated
+created: 2026-05-24
+updated: 2026-05-24
+sources:
+  - "Raw/Sources/lecture_01_course_introduction.md"
+  - "Raw/Sources/lecture_02_expression_analysis_and_clustering.md"
+  - "Raw/Sources/lecture_03_single_cell_analysis.md"
+  - "Raw/Sources/lecture_04_alignment.md"
+  - "Raw/Sources/lecture_05_epigenomics_hmms.md"
+  - "Raw/Sources/lecture_06_regulatory_circuitry.md"
+  - "Raw/Sources/lecture_07_regulatory_networks.md"
+  - "Raw/Sources/lecture_08_intro_to_protein_structure.md"
+  - "Raw/Sources/lecture_09_protein_folding_algorithms.md"
+  - "Raw/Sources/lecture_10_protein_structure_with_transformers.md"
+  - "Raw/Sources/lecture_11_protein_language_models.md"
+  - "Raw/Sources/lecture_12_dna_language_models.md"
+  - "Raw/Sources/lecture_13_drug_development_intro.md"
+  - "Raw/Sources/lecture_14_chemistry_gnns.md"
+  - "Raw/Sources/lecture_15_generating_new_molecules.md"
+  - "Raw/Sources/lecture_16_training_neural_networks.md"
+  - "Raw/Sources/lecture_17_genetics_disease_gwas_prs_mechanism.md"
+  - "Raw/Sources/lecture_18_disease_mechanism_circuitry_eqtls_heritability.md"
+source_count: 18
+aliases:
+  - "MLCB Master Topic Map"
+  - "MLCB Mind Map"
+---
+
+# MLCB Master Topic Map
+
+> [!warning] Coverage backlog, not source truth
+> This map tracks the imported MLCB topic backlog. A topic becomes a factual Wiki claim only after it is verified against `Raw/Sources/` and marked `expanded` or otherwise resolved in `Schema/topic-backlog.jsonl`.
+
+## Import and Processing Summary
+- Last regenerated: 2026-05-24 16:05
+- Backlog topics: 547
+- Expanded topics: 15
+- Seed topics remaining: 532
+- Canonical source layer: `Raw/Sources/`
+- Ignored for citation: `Raw/Files/`
+
+## Topic Counts by Lecture
+
+| Lecture | Title | Source | Topics |
+|---|---|---|---:|
+| [[lecture-01-course-introduction|Lecture 1]] | Course Introduction | `Raw/Sources/lecture_01_course_introduction.md` | 29 |
+| [[lecture-02-expression-analysis-and-clustering|Lecture 2]] | Expression Analysis and Clustering | `Raw/Sources/lecture_02_expression_analysis_and_clustering.md` | 30 |
+| [[lecture-03-single-cell-analysis|Lecture 3]] | Single-cell Analysis | `Raw/Sources/lecture_03_single_cell_analysis.md` | 30 |
+| [[lecture-04-alignment|Lecture 4]] | Alignment | `Raw/Sources/lecture_04_alignment.md` | 29 |
+| [[lecture-05-epigenomics-hmms|Lecture 5]] | Epigenomics - HMMs | `Raw/Sources/lecture_05_epigenomics_hmms.md` | 30 |
+| [[lecture-06-regulatory-circuitry|Lecture 6]] | Regulatory Circuitry | `Raw/Sources/lecture_06_regulatory_circuitry.md` | 29 |
+| [[lecture-07-regulatory-networks|Lecture 7]] | Regulatory Networks | `Raw/Sources/lecture_07_regulatory_networks.md` | 30 |
+| [[lecture-08-intro-to-protein-structure|Lecture 8]] | Intro to Protein Structure | `Raw/Sources/lecture_08_intro_to_protein_structure.md` | 30 |
+| [[lecture-09-protein-folding-algorithms|Lecture 9]] | Protein Folding Algorithms | `Raw/Sources/lecture_09_protein_folding_algorithms.md` | 30 |
+| [[lecture-10-protein-structure-with-transformers|Lecture 10]] | Protein Structure with Transformers | `Raw/Sources/lecture_10_protein_structure_with_transformers.md` | 29 |
+| [[lecture-11-protein-language-models|Lecture 11]] | Protein Language Models | `Raw/Sources/lecture_11_protein_language_models.md` | 29 |
+| [[lecture-12-dna-language-models|Lecture 12]] | DNA Language Models | `Raw/Sources/lecture_12_dna_language_models.md` | 29 |
+| [[lecture-13-drug-development-intro|Lecture 13]] | Drug Development Intro | `Raw/Sources/lecture_13_drug_development_intro.md` | 31 |
+| [[lecture-14-chemistry-gnns|Lecture 14]] | Chemistry GNNs | `Raw/Sources/lecture_14_chemistry_gnns.md` | 30 |
+| [[lecture-15-generating-new-molecules|Lecture 15]] | Generating New Molecules | `Raw/Sources/lecture_15_generating_new_molecules.md` | 31 |
+| [[lecture-16-training-neural-networks|Lecture 16]] | Training Neural Networks | `Raw/Sources/lecture_16_training_neural_networks.md` | 32 |
+| [[lecture-17-genetics-disease-gwas-prs-mechanism|Lecture 17]] | Genetics, Disease, GWAS, PRS, Mechanism | `Raw/Sources/lecture_17_genetics_disease_gwas_prs_mechanism.md` | 34 |
+| [[lecture-18-disease-mechanism-circuitry-eqtls-heritability|Lecture 18]] | Disease Mechanism, Circuitry, eQTLs, Heritability | `Raw/Sources/lecture_18_disease_mechanism_circuitry_eqtls_heritability.md` | 35 |
+
+## Module and Lecture Topic Backlog
+
+## M1 - Genomics, Epigenomics, Single-Cell Analysis, and Networks
+
+### [[lecture-01-course-introduction|Lecture 1 - Course Introduction]]
+- Source: `Raw/Sources/lecture_01_course_introduction.md`
+- Backlog count: 29
+
+- [ ] `L01_T001` Data-driven vs. hypothesis-driven paradigms
+  - Type: `comparison`
+  - Suggested page: `Wiki/Comparisons/data-driven-vs-hypothesis-driven-paradigms.md`
+  - Status: `expanded`; verified: `true`
+- [ ] `L01_T002` [[representation-learning|Representation Learning]]: Images, Genomes, Graphs
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-01-course-introduction.md`
+  - Status: `expanded`; verified: `true`
+- [ ] `L01_T003` [[graph-neural-networks|Graph Neural Networks]] ([[graph-neural-networks|GNNs]]) and Large Language Models (LLMs)
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/graph-neural-networks-gnns-and-large-language-models-llms.md`
+  - Status: `expanded`; verified: `true`
+- [ ] `L01_T004` Combining traditional ML methods like Gibbs sampling and [[expectation-maximization|Expectation Maximization]] with Deep Learning
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-01-course-introduction.md`
+  - Status: `expanded`; verified: `true`
+- [ ] `L01_T005` Integrating [[graph-neural-networks|Graph Neural Networks]] ([[graph-neural-networks|GNNs]]) and deep generative models
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/integrating-graph-neural-networks-gnns-and-deep-generative-models.md`
+  - Status: `expanded`; verified: `true`
+- [ ] `L01_T006` Navigating the dual axes of computation vs. biology and foundations vs. frontiers
+  - Type: `comparison`
+  - Suggested page: `Wiki/Comparisons/navigating-the-dual-axes-of-computation-vs-biology-and-foundations-vs-frontiers.md`
+  - Status: `expanded`; verified: `true`
+- [ ] `L01_T007` Overview of the four course modules spanning genomics, [[protein]] structure, chemistry, and EHRs
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/overview-of-the-four-course-modules-spanning-genomics-protein-structure-chemistr.md`
+  - Status: `expanded`; verified: `true`
+- [ ] `L01_T008` Addressing the hacky and decentralized nature of biological systems through computational simulation
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/addressing-the-hacky-and-decentralized-nature-of-biological-systems-through-comp.md`
+  - Status: `expanded`; verified: `true`
+- [ ] `L01_T009` Accelerating hypothesis testing computationally to reduce animal testing and human trials
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-01-course-introduction.md`
+  - Status: `expanded`; verified: `true`
+- [ ] `L01_T010` Interpreting [[dna|DNA]] and [[rna|RNA]] as a programming language to decipher biological function
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-01-course-introduction.md`
+  - Status: `expanded`; verified: `true`
+- [ ] `L01_T011` Distilling signal from noise in error-prone biological and technical measurements
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/distilling-signal-from-noise-in-error-prone-biological-and-technical-measurement.md`
+  - Status: `expanded`; verified: `true`
+- [ ] `L01_T012` Shifting from traditional AI pattern recognition to generative AI and [[representation-learning]]
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-01-course-introduction.md`
+  - Status: `expanded`; verified: `true`
+- [ ] `L01_T013` Grasping emergent properties in complex biological languages like [[protein]] folding
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/grasping-emergent-properties-in-complex-biological-languages-like-protein-foldin.md`
+  - Status: `expanded`; verified: `true`
+- [ ] `L01_T014` Utilizing [[self-supervised-learning]] by predicting hidden parts of input data
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-01-course-introduction.md`
+  - Status: `expanded`; verified: `true`
+- [ ] `L01_T015` Developing multimodal foundation models linking 3D structural geometry with descriptive text
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-01-course-introduction.md`
+  - Status: `expanded`; verified: `true`
+- [ ] `L01_T016` Building hierarchical concepts to link disconnected biological knowledge
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-01-course-introduction.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L01_T017` Representation learning transitioning from raw inputs such as pixels and bases to abstract features
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-01-course-introduction.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L01_T018` Self-directed feature learning eliminating the need for pre-programmed human engineering
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-01-course-introduction.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L01_T019` Utilizing the [[latent-space]] [[latent-space|Z vectors]] as a bridge between raw inputs X and outputs Y
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-01-course-introduction.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L01_T020` Applying Convolutional Neural Networks (CNNs) to genomic sequences to recognize regulatory motifs
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/applying-convolutional-neural-networks-cnns-to-genomic-sequences-to-recognize-re.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L01_T021` Extending [[representation-learning]] to irregular graphs for chemical [[[[molecule]]|molecules]]
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/extending-representation-learning-to-irregular-graphs-for-chemical-molecules.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L01_T022` Encoding intrinsic atom properties such as hydrophobicity and charge in the first layer of [[graph-neural-networks|GNNs]]
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/encoding-intrinsic-atom-properties-such-as-hydrophobicity-and-charge-in-the-firs.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L01_T023` Progressive neighborhood information aggregation in multi-layer [[graph-neural-networks|GNNs]]
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/progressive-neighborhood-information-aggregation-in-multi-layer-gnns.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L01_T024` Applying bottom-up [[graph-neural-networks|GNN]] learning to [[protein]]-[[protein]] and gene regulatory networks
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/applying-bottom-up-gnn-learning-to-protein-protein-and-gene-regulatory-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L01_T025` Ground-level word embeddings such as Word2Vec based on contextual usage in LLMs
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/ground-level-word-embeddings-such-as-word2vec-based-on-contextual-usage-in-llms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L01_T026` Using transformer [[attention-mechanism|attention]] mechanisms for dynamic, context-dependent representations
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/using-transformer-attention-mechanisms-for-dynamic-context-dependent-representat.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L01_T027` Creating multimodal embedding spaces bridging text, images, [[protein|proteins]], and chemical structures
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/creating-multimodal-embedding-spaces-bridging-text-images-proteins-and-chemical.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L01_T028` Projecting high-dimensional latent Z spaces into 2D using t-SNE or UMAP
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/projecting-high-dimensional-latent-z-spaces-into-2d-using-t-sne-or-umap.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L01_T029` Generating cognitive maps to uncover hidden relationships in complex datasets
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-01-course-introduction.md`
+  - Status: `seed`; verified: `false`
+
+### [[lecture-02-expression-analysis-and-clustering|Lecture 2 - Expression Analysis and Clustering]]
+- Source: `Raw/Sources/lecture_02_expression_analysis_and_clustering.md`
+- Backlog count: 30
+
+- [ ] `L02_T001` Machine Learning Concepts: Supervised, Unsupervised, Semi-supervised
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/machine-learning-concepts-supervised-unsupervised-semi-supervised.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L02_T002` Bayesian Inference: Priors, Likelihoods, Posteriors
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/bayesian-inference-priors-likelihoods-posteriors.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L02_T003` Clustering Algorithms: K-means, Gaussian Mixture Models, Hierarchical
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-02-expression-analysis-and-clustering.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L02_T004` Classification: Naive Bayes
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/classification-naive-bayes.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L02_T005` Structuring gene expression matrices with rows as genes and columns as individual cells
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-02-expression-analysis-and-clustering.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L02_T006` Defining machine learning by continuous improvement on a task using training data
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/defining-machine-learning-by-continuous-improvement-on-a-task-using-training-dat.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L02_T007` Comparing supervised learning classification with unsupervised learning clustering
+  - Type: `comparison`
+  - Suggested page: `Wiki/Comparisons/comparing-supervised-learning-classification-with-unsupervised-learning-clusteri.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L02_T008` Exploring regression tasks to predict continuous values like disease onset age
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-02-expression-analysis-and-clustering.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L02_T009` Applying machine learning to unstructured data, anomaly detection, and imputation
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-02-expression-analysis-and-clustering.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L02_T010` Distinguishing the world of observable measurements from the world of inferred hidden states
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/distinguishing-the-world-of-observable-measurements-from-the-world-of-inferred-h.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L02_T011` Using forward generative probabilities to model how known states produce data
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-02-expression-analysis-and-clustering.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L02_T012` Reversing probability arrows using Bayes Rule for posterior inference
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/reversing-probability-arrows-using-bayes-rule-for-posterior-inference.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L02_T013` Normalizing inferences using marginal probability across all hypotheses
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/normalizing-inferences-using-marginal-probability-across-all-hypotheses.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L02_T014` Addressing the importance of prior probability, especially for rare disease testing
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/addressing-the-importance-of-prior-probability-especially-for-rare-disease-testi.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L02_T015` Modeling data with Gaussian Mixture Models (GMMs) for probabilistic cluster assignment
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-02-expression-analysis-and-clustering.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L02_T016` Visualizing high-dimensional data via PCA and non-linear embeddings
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/visualizing-high-dimensional-data-via-pca-and-non-linear-embeddings.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L02_T017` Differentiating feature selection from feature construction
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-02-expression-analysis-and-clustering.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L02_T018` Blurring supervised and unsupervised lines with semi-supervised and [[self-supervised-learning]]
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/blurring-supervised-and-unsupervised-lines-with-semi-supervised-and-self-supervi.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L02_T019` Contrasting classical AI hard-coded rules with ML and deep learning
+  - Type: `comparison`
+  - Suggested page: `Wiki/Comparisons/contrasting-classical-ai-hard-coded-rules-with-ml-and-deep-learning.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L02_T020` Utilizing droplets and unique [[dna|DNA]] barcodes to isolate individual cell [[rna|RNA]]
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-02-expression-analysis-and-clustering.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L02_T021` Overcoming practical single-cell challenges like technical noise, sparsity, and doublets
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-02-expression-analysis-and-clustering.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L02_T022` Initializing K-means clustering with random centroids and minimizing within-cluster variance
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-02-expression-analysis-and-clustering.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L02_T023` Modifying rigid K-means boundaries with Fuzzy K-means for partial cluster assignment
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-02-expression-analysis-and-clustering.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L02_T024` Iteratively refining GMMs using the Expectation-Maximization ([[expectation-maximization|EM]]) algorithm
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/iteratively-refining-gmms-using-the-expectation-maximization-em-algorithm.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L02_T025` Building nested relationships with hierarchical clustering without predefining K
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-02-expression-analysis-and-clustering.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L02_T026` Comparing hierarchical linkage definitions: single, complete, average, and centroid
+  - Type: `comparison`
+  - Suggested page: `Wiki/Comparisons/comparing-hierarchical-linkage-definitions-single-complete-average-and-centroid.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L02_T027` Applying clustering to free-form text, survey responses, and gene function descriptions
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-02-expression-analysis-and-clustering.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L02_T028` Estimating distribution spreads in Naive Bayes using known class memberships
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/estimating-distribution-spreads-in-naive-bayes-using-known-class-memberships.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L02_T029` Establishing classification decision boundaries using calculated likelihood ratios
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/establishing-classification-decision-boundaries-using-calculated-likelihood-rati.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L02_T030` Pairing Naive Bayes with PCA to address the naive feature independence assumption
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/pairing-naive-bayes-with-pca-to-address-the-naive-feature-independence-assumptio.md`
+  - Status: `seed`; verified: `false`
+
+### [[lecture-03-single-cell-analysis|Lecture 3 - Single-cell Analysis]]
+- Source: `Raw/Sources/lecture_03_single_cell_analysis.md`
+- Backlog count: 30
+
+- [ ] `L03_T001` Bulk vs. Single-Cell [[rna|RNA]]-seq
+  - Type: `comparison`
+  - Suggested page: `Wiki/Comparisons/bulk-vs-single-cell-rna-seq.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L03_T002` Technologies: FACS, Microfluidics, Barcoding
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-03-single-cell-analysis.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L03_T003` Analysis Steps: Data Cleaning, Clustering, Annotation
+  - Type: `workflow`
+  - Suggested page: `Wiki/Projects/analysis-steps-data-cleaning-clustering-annotation.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L03_T004` Differentially Expressed Genes (DEGs) and Gene Modules
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-03-single-cell-analysis.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L03_T005` Overcoming the limitations of bulk smoothie transcriptomics to identify specific cell subtypes
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-03-single-cell-analysis.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L03_T006` Capturing spatial context via spatial transcriptomics using the tart analogy
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-03-single-cell-analysis.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L03_T007` Approximating whole-cell [[rna|RNA]] using single-nucleus sequencing in complex tissues like the brain
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-03-single-cell-analysis.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L03_T008` Observing continuous expression gradients within single cell types
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/observing-continuous-expression-gradients-within-single-cell-types.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L03_T009` Tracing biological variability and stochasticity in gene activation and signal response
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-03-single-cell-analysis.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L03_T010` Inheriting epigenetic memory from early developmental cell division gradients
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/inheriting-epigenetic-memory-from-early-developmental-cell-division-gradients.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L03_T011` Isolating cells using fluorescence-activated cell sorting (FACS) and laser capture
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-03-single-cell-analysis.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L03_T012` Encapsulating cells in microfluidic droplets with barcode-loaded beads
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-03-single-cell-analysis.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L03_T013` Sequencing poly-A tails for digital gene expression versus full-length splicing analysis
+  - Type: `comparison`
+  - Suggested page: `Wiki/Comparisons/sequencing-poly-a-tails-for-digital-gene-expression-versus-full-length-splicing.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L03_T014` Utilizing multi-round split-pool barcoding for highly precise cell tracing
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-03-single-cell-analysis.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L03_T015` Inferring causality from genetic variants linked to molecular and phenotypic disease states
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-03-single-cell-analysis.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L03_T016` Filtering problematic data via strict single-cell quality control metrics
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/filtering-problematic-data-via-strict-single-cell-quality-control-metrics.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L03_T017` Identifying major variation drivers to cluster and annotate cell types
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-03-single-cell-analysis.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L03_T018` Handling hierarchical sampling challenges in differentially expressed gene DEG analysis
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-03-single-cell-analysis.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L03_T019` Contrasting cell-centric, pseudobulk, and hierarchical mixture model DEG approaches
+  - Type: `comparison`
+  - Suggested page: `Wiki/Comparisons/contrasting-cell-centric-pseudobulk-and-hierarchical-mixture-model-deg-approache.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L03_T020` Tracking disease progression spatially through multi-region brain analysis
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-03-single-cell-analysis.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L03_T021` Decomposing complex expression matrices using singular value decomposition SVD
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/decomposing-complex-expression-matrices-using-singular-value-decomposition-svd.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L03_T022` Grouping co-regulated genes into modules to reduce noise and increase statistical robustness
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-03-single-cell-analysis.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L03_T023` Visualizing gene modules as interconnected interaction networks
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-03-single-cell-analysis.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L03_T024` Avoiding skewed bulk results caused by cellular composition shifts such as neuron loss
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/avoiding-skewed-bulk-results-caused-by-cellular-composition-shifts-such-as-neuro.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L03_T025` Testing analytical reproducibility across different biological replicates and cohorts
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-03-single-cell-analysis.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L03_T026` Mapping covariance in cellular changes between anatomically linked brain regions
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-03-single-cell-analysis.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L03_T027` Uncovering latent genetic predispositions through transcriptomic and phenotypic discrepancies
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-03-single-cell-analysis.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L03_T028` Linking increased mutational burden to global epigenomic erosion in neurodegeneration
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-03-single-cell-analysis.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L03_T029` Inferring cellular differentiation trajectories using the ratio of spliced to unspliced [[rna|RNA]]
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-03-single-cell-analysis.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L03_T030` Projecting continuous disease phenotypes directly onto individual cellular neighborhoods
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-03-single-cell-analysis.md`
+  - Status: `seed`; verified: `false`
+
+### [[lecture-04-alignment|Lecture 4 - Alignment]]
+- Source: `Raw/Sources/lecture_04_alignment.md`
+- Backlog count: 29
+
+- [ ] `L04_T001` Comparative Genomics and Evolution
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-04-alignment.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L04_T002` Dynamic Programming: Fibonacci, Alignment Matrix, Traceback
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/dynamic-programming-fibonacci-alignment-matrix-traceback.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L04_T003` Local vs. Global Alignment including linear space
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/local-vs-global-alignment-including-linear-space.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L04_T004` Hashing and BLAST: Inexact matching and PSI-BLAST
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/hashing-and-blast-inexact-matching-and-psi-blast.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L04_T005` Aligning sequential data across domains: language translation, genomes, and time-series states
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-04-alignment.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L04_T006` Inferring common ancestors and evolutionary divergence through comparative genomics
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-04-alignment.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L04_T007` Identifying functionally critical, purifying-selected regions across multiple species
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-04-alignment.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L04_T008` Recognizing that many disease-causing mutations reside in non-coding regulatory sequences
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-04-alignment.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L04_T009` Simulating evolutionary divergence via operations: mutation, insertion, and deletion
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-04-alignment.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L04_T010` Assigning penalty costs to evolutionary events based on their probabilistic rarity
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-04-alignment.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L04_T011` Distinguishing longest common substrings from longest common subsequences with gaps
+  - Type: `comparison`
+  - Suggested page: `Wiki/Comparisons/distinguishing-longest-common-substrings-from-longest-common-subsequences-with-g.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L04_T012` Implementing position-specific scoring matrices for structural substitution similarities
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/implementing-position-specific-scoring-matrices-for-structural-substitution-simi.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L04_T013` Eliminating exponential recursive computation waste with bottom-up dynamic programming
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-04-alignment.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L04_T014` Initializing and iteratively filling an N by M alignment scoring matrix
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/initializing-and-iteratively-filling-an-n-by-m-alignment-scoring-matrix.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L04_T015` Calculating individual cell scores using diagonal, vertical, and horizontal dependencies
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-04-alignment.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L04_T016` Reconstructing the optimal evolutionary path using stored traceback pointers
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-04-alignment.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L04_T017` Reducing search space computationally using bounded alignment heuristics
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/reducing-search-space-computationally-using-bounded-alignment-heuristics.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L04_T018` Achieving linear space alignment by storing only the current and previous calculation rows
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/achieving-linear-space-alignment-by-storing-only-the-current-and-previous-calcul.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L04_T019` Utilizing recursive divide-and-conquer midpoints for linear-space path tracing
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-04-alignment.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L04_T020` Modifying dynamic programming boundaries to identify high-scoring local alignments
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/modifying-dynamic-programming-boundaries-to-identify-high-scoring-local-alignmen.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L04_T021` Avoiding end-gap penalties to accommodate incomplete or fragmented sequence data
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-04-alignment.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L04_T022` Encoding sequences into numerical hashes for ultra-fast constant-time database matching
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-04-alignment.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L04_T023` Managing hash sizes and minimizing collisions using modulus operations
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-04-alignment.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L04_T024` Anchoring local alignments using exact-match short segment seeds in BLAST
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/anchoring-local-alignments-using-exact-match-short-segment-seeds-in-blast.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L04_T025` Scoring inexact matches based on biologically plausible evolutionary substitutions
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-04-alignment.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L04_T026` Iteratively refining searches to find remote homologs using PSI-BLAST
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/iteratively-refining-searches-to-find-remote-homologs-using-psi-blast.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L04_T027` Constructing position-specific scoring matrices PSSMs to capture evolutionary variability
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-04-alignment.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L04_T028` Calculating alignment significance using the likelihood ratio of related versus random models
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/calculating-alignment-significance-using-the-likelihood-ratio-of-related-versus.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L04_T029` Applying sequence modeling foundations to complex RNN, LSTM, and [[transformer|Transformer]] architectures
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/applying-sequence-modeling-foundations-to-complex-rnn-lstm-and-transformer-archi.md`
+  - Status: `seed`; verified: `false`
+
+### [[lecture-05-epigenomics-hmms|Lecture 5 - Epigenomics - HMMs]]
+- Source: `Raw/Sources/lecture_05_epigenomics_hmms.md`
+- Backlog count: 30
+
+- [ ] `L05_T001` Chromatin Modifications: [[dna|DNA]] Methylation, Histone modifications, Accessibility
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-05-epigenomics-hmms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L05_T002` Read Mapping using Burrows-Wheeler Transform/BWT
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-05-epigenomics-hmms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L05_T003` Peak Calling and Quality Control
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-05-epigenomics-hmms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L05_T004` [[hidden-markov-models|Hidden Markov Models]]: [[hidden-markov-models|HMM]] Transitions, Emissions, [[viterbi-algorithm|Viterbi]], Posterior Decoding
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/hidden-markov-models-hmm-transitions-emissions-viterbi-posterior-decoding.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L05_T005` Generating diverse cell phenotypes from a single genome via epigenomic regulation
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-05-epigenomics-hmms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L05_T006` Compacting 2 meters of [[dna|DNA]] into the nucleus using histone-wrapped nucleosomes
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-05-epigenomics-hmms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L05_T007` Preserving cellular identity during replication through functional epigenomic memory
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/preserving-cellular-identity-during-replication-through-functional-epigenomic-me.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L05_T008` Modulating transcription factor access through local nucleosome positioning and mobility
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-05-epigenomics-hmms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L05_T009` Blocking regulatory binding in the major groove via [[dna|DNA]] methylation at cytosine bases
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-05-epigenomics-hmms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L05_T010` Modifying chromatin structure using post-translational marks on histone tails
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-05-epigenomics-hmms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L05_T011` Classifying histone marks: H3K27ac enhancers, H3K4me3 promoters, H3K36me3 transcribed regions
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-05-epigenomics-hmms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L05_T012` Distinguishing facultative repression H3K27me3 from stable heterochromatin H3K9me3
+  - Type: `comparison`
+  - Suggested page: `Wiki/Comparisons/distinguishing-facultative-repression-h3k27me3-from-stable-heterochromatin-h3k9m.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L05_T013` Re-establishing epigenetic marks post-replication via dedicated read/write maintenance systems
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/re-establishing-epigenetic-marks-post-replication-via-dedicated-read-write-maint.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L05_T014` Wiping out epigenetic memory between generations during gametogenesis and in the zygote
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/wiping-out-epigenetic-memory-between-generations-during-gametogenesis-and-in-the.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L05_T015` Breaking symmetry in early development through spatial gradients and response elements
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/breaking-symmetry-in-early-development-through-spatial-gradients-and-response-el.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L05_T016` Displacing nucleosomes using robust pioneer transcription factors
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-05-epigenomics-hmms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L05_T017` Mapping unmethylated cytosines by converting them to uracil via bisulfite sequencing
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/mapping-unmethylated-cytosines-by-converting-them-to-uracil-via-bisulfite-sequen.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L05_T018` Identifying open chromatin and protected regulatory footprints using DNase sequencing
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-05-epigenomics-hmms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L05_T019` Isolating specific [[protein]]-[[dna|DNA]] interactions using targeted antibodies in ChIP-Seq
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-05-epigenomics-hmms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L05_T020` Accelerating massive read mapping using the memory-efficient Burrows-Wheeler Transform BWT
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/accelerating-massive-read-mapping-using-the-memory-efficient-burrows-wheeler-tra.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L05_T021` Filtering experimental artifacts by evaluating non-redundant library read fractions
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-05-epigenomics-hmms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L05_T022` Determining captured [[dna|DNA]] fragment length via forward/reverse strand cross-correlation
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-05-epigenomics-hmms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L05_T023` Setting reproducible peak-calling cutoffs using the Irreproducible Discovery Rate IDR
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-05-epigenomics-hmms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L05_T024` Learning the complex combinatorial language of the epigenome from scratch
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-05-epigenomics-hmms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L05_T025` Modeling unobservable functional regions using hidden states in [[hidden-markov-models|Hidden Markov Models]] [[hidden-markov-models|HMMs]]
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/modeling-unobservable-functional-regions-using-hidden-states-in-hidden-markov-mo.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L05_T026` Calculating transition probabilities between adjacent genomic functional states
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-05-epigenomics-hmms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L05_T027` Defining the probability of observing specific histone marks via emission matrices
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/defining-the-probability-of-observing-specific-histone-marks-via-emission-matric.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L05_T028` Scoring parsed paths by combining previous state max scores, transitions, and emissions
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/scoring-parsed-paths-by-combining-previous-state-max-scores-transitions-and-emis.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L05_T029` Avoiding exponential brute-force calculations using the dynamic programming [[viterbi-algorithm|Viterbi]] algorithm
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/avoiding-exponential-brute-force-calculations-using-the-dynamic-programming-vite.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L05_T030` Calculating the most likely state per position using Posterior Decoding Forward-Backward algorithm
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/calculating-the-most-likely-state-per-position-using-posterior-decoding-forward.md`
+  - Status: `seed`; verified: `false`
+
+### [[lecture-06-regulatory-circuitry|Lecture 6 - Regulatory Circuitry]]
+- Source: `Raw/Sources/lecture_06_regulatory_circuitry.md`
+- Backlog count: 29
+
+- [ ] `L06_T001` [[hidden-markov-models|HMM]] Parameter Learning: Supervised vs. Unsupervised/Baum-Welch
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/hmm-parameter-learning-supervised-vs-unsupervised-baum-welch.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L06_T002` Chromatin State Characterization
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-06-regulatory-circuitry.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L06_T003` Linking Enhancers to Target Genes: Correlation, [[eqtl|eQTLs]], Hi-C/3D Genome
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-06-regulatory-circuitry.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L06_T004` Transcription Factor Analysis: Activators vs. Repressors
+  - Type: `comparison`
+  - Suggested page: `Wiki/Comparisons/transcription-factor-analysis-activators-vs-repressors.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L06_T005` Locating disease-associated genetic variants within non-coding regulatory elements
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/locating-disease-associated-genetic-variants-within-non-coding-regulatory-elemen.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L06_T006` Bridging spatial gaps by physically looping enhancers to target promoters in 3D
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-06-regulatory-circuitry.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L06_T007` Restricting jittery state changes in genomic modeling by imposing high [[hidden-markov-models|HMM]] transition penalties
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/restricting-jittery-state-changes-in-genomic-modeling-by-imposing-high-hmm-trans.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L06_T008` Deriving geometric length distributions for genomic regions based on [[hidden-markov-models|HMM]] self-transition probabilities
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/deriving-geometric-length-distributions-for-genomic-regions-based-on-hmm-self-tr.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L06_T009` Summing all possible state paths dynamically using the Forward and Backward algorithms
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-06-regulatory-circuitry.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L06_T010` Estimating parameters in supervised [[hidden-markov-models|HMMs]] by directly counting emissions and transitions
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/estimating-parameters-in-supervised-hmms-by-directly-counting-emissions-and-tran.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L06_T011` Smoothing probabilities in small datasets by incorporating pseudo counts
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-06-regulatory-circuitry.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L06_T012` Optimizing unsupervised [[hidden-markov-models|HMMs]] iteratively using the [[viterbi-algorithm|Viterbi]] algorithm hard assignments
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/optimizing-unsupervised-hmms-iteratively-using-the-viterbi-algorithm-hard-assign.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L06_T013` Contrasting [[hidden-markov-models|HMM]] sequence homogeneity constraints with non-sequential K-means clustering
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/contrasting-hmm-sequence-homogeneity-constraints-with-non-sequential-k-means-clu.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L06_T014` Capturing probability mass across all potential paths using Baum-Welch [[expectation-maximization|EM]] training
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/capturing-probability-mass-across-all-potential-paths-using-baum-welch-em-traini.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L06_T015` Annotating hidden chromatin states by matching enrichments to known genomic features such as TSS
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-06-regulatory-circuitry.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L06_T016` Mapping the genome spatially into active A compartments and peripherally repressed B compartments
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-06-regulatory-circuitry.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L06_T017` Capturing higher-order pairwise mark dependencies by increasing [[hidden-markov-models|HMM]] state complexity
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/capturing-higher-order-pairwise-mark-dependencies-by-increasing-hmm-state-comple.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L06_T018` Preventing optimization redundancy by pruning states via nested initialization
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-06-regulatory-circuitry.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L06_T019` Learning shared cell states by stacking marks or concatenating chromosomes across cell types
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-06-regulatory-circuitry.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L06_T020` Imputing missing experimental marks using learned multi-cell-type correlation structures
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-06-regulatory-circuitry.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L06_T021` Linking distal enhancers to genes using activity correlations and expression quantitative trait loci [[eqtl|eQTLs]]
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-06-regulatory-circuitry.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L06_T022` Mapping physical cis- and trans-interactions inside the nucleus via Hi-C conformation capture
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-06-regulatory-circuitry.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L06_T023` Defining Topologically Associated Domains TADs formed through cohesin loop extrusion
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-06-regulatory-circuitry.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L06_T024` Clustering millions of [[enhancer]] regions into cell-type-specific functional activity modules
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-06-regulatory-circuitry.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L06_T025` Identifying trans-acting regulators by examining motif enrichments within [[enhancer]] modules
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-06-regulatory-circuitry.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L06_T026` Distinguishing genetic activators from repressors by correlating motif presence with TF expression
+  - Type: `comparison`
+  - Suggested page: `Wiki/Comparisons/distinguishing-genetic-activators-from-repressors-by-correlating-motif-presence.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L06_T027` Mapping high-resolution chromatin states directly around precise transcription factor binding motifs
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-06-regulatory-circuitry.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L06_T028` Validating the functional necessity of single motifs using targeted luciferase reporter assays
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-06-regulatory-circuitry.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L06_T029` Connecting non-coding variant disruptions directly to regulatory circuitry and disease manifestation
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-06-regulatory-circuitry.md`
+  - Status: `seed`; verified: `false`
+
+### [[lecture-07-regulatory-networks|Lecture 7 - Regulatory Networks]]
+- Source: `Raw/Sources/lecture_07_regulatory_networks.md`
+- Backlog count: 30
+
+- [ ] `L07_T001` Regulatory Motifs: Generative models vs. instances
+  - Type: `comparison`
+  - Suggested page: `Wiki/Comparisons/regulatory-motifs-generative-models-vs-instances.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L07_T002` Motif Discovery: [[expectation-maximization|Expectation Maximization]], Gibbs Sampling, Deep Learning/CNNs
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/motif-discovery-expectation-maximization-gibbs-sampling-deep-learning-cnns.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L07_T003` Network Types: Gene Regulatory, Metabolic, Signaling, Protein-Protein
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-07-regulatory-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L07_T004` Matrix Representations and Linear Algebra: Eigenvalues, PCA, SVD, t-SNE
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/matrix-representations-and-linear-algebra-eigenvalues-pca-svd-t-sne.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L07_T005` Acting as foundational control nodes, regulatory motifs mediate specific physical TF binding
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-07-regulatory-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L07_T006` Competing biophysically with nucleosomes, motifs maintain open accessible regulatory regions
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-07-regulatory-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L07_T007` Recognizing molecular nucleotide signatures directly from the [[dna|DNA]] major groove without unwinding
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-07-regulatory-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L07_T008` Binding as homodimers creates inverse palindromic spacing across the double helix
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-07-regulatory-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L07_T009` Disrupting critical motifs with disease-linked SNPs such as stopping obesity thermogenesis
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-07-regulatory-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L07_T010` Representing general structural tendencies via probabilistic Position Weight Matrices PWMs
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-07-regulatory-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L07_T011` Capturing positional nucleotide dependencies by separating a single motif into multiple PWMs
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-07-regulatory-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L07_T012` Discovering functional motifs observationally via progressive experimental selection assays
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-07-regulatory-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L07_T013` Enumerating recurrent k-mers systematically across co-expressed [[promoter]] regions
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/enumerating-recurrent-k-mers-systematically-across-co-expressed-promoter-regions.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L07_T014` Utilizing [[expectation-maximization|Expectation Maximization]] [[expectation-maximization|EM]] to iteratively update likelihood ratios against a background
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/utilizing-expectation-maximization-em-to-iteratively-update-likelihood-ratios-ag.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L07_T015` Exploring complex motif landscapes via stochastic Gibbs sampling to escape local maxima
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-07-regulatory-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L07_T016` Employing multi-task CNNs to predict the binding of hundreds of regulators simultaneously
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/employing-multi-task-cnns-to-predict-the-binding-of-hundreds-of-regulators-simul.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L07_T017` Extracting de novo motifs by isolating evolutionarily conserved islands across multiple species
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-07-regulatory-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L07_T018` Calculating specific motif instance confidence utilizing phylogenetic branch length scoring
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-07-regulatory-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L07_T019` Modeling Gene Regulatory Networks with directed, signed activator/repressor, and weighted edges
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-07-regulatory-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L07_T020` Mapping undirected Protein-Protein Interactions versus bidirectional Metabolic enzyme networks
+  - Type: `comparison`
+  - Suggested page: `Wiki/Comparisons/mapping-undirected-protein-protein-interactions-versus-bidirectional-metabolic-e.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L07_T021` Identifying network vulnerabilities and tracking infection propagation hubs
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-07-regulatory-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L07_T022` Analyzing structural network motifs like feedforward and feedback regulatory loops
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-07-regulatory-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L07_T023` Isolating functional cross-network modules demonstrating intense local connectivity
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/isolating-functional-cross-network-modules-demonstrating-intense-local-connectiv.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L07_T024` Encoding network topologies mathematically within symmetric or asymmetric adjacency matrices
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/encoding-network-topologies-mathematically-within-symmetric-or-asymmetric-adjace.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L07_T025` Computing transitive multi-step network closures through iterative matrix multiplication
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-07-regulatory-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L07_T026` Simplifying complex matrix transformations through eigenvalue/eigenvector structural decomposition
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-07-regulatory-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L07_T027` Extracting major axes of variance from high-dimensional data via Principal Component Analysis PCA
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/extracting-major-axes-of-variance-from-high-dimensional-data-via-principal-compo.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L07_T028` Generalizing PCA to rectangular matrices via Singular Value Decomposition SVD for latent eigen-genes
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/generalizing-pca-to-rectangular-matrices-via-singular-value-decomposition-svd-fo.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L07_T029` Mapping non-linear single-cell datasets into 2D spaces while preserving local neighbors using t-SNE
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/mapping-non-linear-single-cell-datasets-into-2d-spaces-while-preserving-local-ne.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L07_T030` Passing messages iteratively in [[graph-neural-networks|GNNs]] to build hierarchical representations from neighbors
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/passing-messages-iteratively-in-gnns-to-build-hierarchical-representations-from.md`
+  - Status: `seed`; verified: `false`
+
+## M2 - Protein Structure, Language Models, and Geometric Deep Learning
+
+### [[lecture-08-intro-to-protein-structure|Lecture 8 - Intro to Protein Structure]]
+- Source: `Raw/Sources/lecture_08_intro_to_protein_structure.md`
+- Backlog count: 30
+
+- [ ] `L08_T001` Structural Biology and Experimental Methods: X-ray Crystallography, NMR, Cryo-[[expectation-maximization|EM]]
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/structural-biology-and-experimental-methods-x-ray-crystallography-nmr-cryo-em.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L08_T002` Protein Folding and Conformations: Levinthal's Paradox, Energy Landscapes
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-08-intro-to-protein-structure.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L08_T003` Secondary and Tertiary Structure: Ramachandran Plots, Contact Maps
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-08-intro-to-protein-structure.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L08_T004` Structural Alignment and Comparison: RMSD
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/structural-alignment-and-comparison-rmsd.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L08_T005` Converting 1D genomic nucleotide strings into 3D functional [[protein]] machinery
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-08-intro-to-protein-structure.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L08_T006` Accessing hundreds of thousands of established [[protein]] models through the Protein Data Bank PDB
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-08-intro-to-protein-structure.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L08_T007` Linking critical neurodegenerative conditions such as Alzheimer's and prions to toxic [[protein]] misfolding
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-08-intro-to-protein-structure.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L08_T008` Engineering entirely synthetic [[protein|proteins]] for clinical, synthetic biology, and industrial use
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-08-intro-to-protein-structure.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L08_T009` Using PyMOL visualization software combined with Python scripting for structural analysis
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-08-intro-to-protein-structure.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L08_T010` Mapping electrostatic surface potentials to identify positively charged [[dna|DNA]]-binding regions
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-08-intro-to-protein-structure.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L08_T011` Fitting specialized recognition helices precisely into the [[dna|DNA]] major groove
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-08-intro-to-protein-structure.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L08_T012` Combining sequence-specific base contacts with general backbone contacts for stability
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-08-intro-to-protein-structure.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L08_T013` Transferring entire target specificities by mutating only a few critical recognition residues
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-08-intro-to-protein-structure.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L08_T014` Modulating repressor [[dna|DNA]] affinity dynamically via small-[[molecule]] allosteric regulation such as LacI
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-08-intro-to-protein-structure.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L08_T015` Deducing structures via X-ray crystallography diffraction patterns and Fourier transforms
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-08-intro-to-protein-structure.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L08_T016` Overcoming crystallographic phase loss using heavy atom substitution or molecular replacement
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/overcoming-crystallographic-phase-loss-using-heavy-atom-substitution-or-molecula.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L08_T017` Utilizing Nuclear Magnetic Resonance NMR to assess [[protein]] flexibility and dynamics in solution
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-08-intro-to-protein-structure.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L08_T018` Applying Cryogenic Electron Microscopy Cryo-[[expectation-maximization|EM]] to visualize massive macromolecular complexes
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/applying-cryogenic-electron-microscopy-cryo-em-to-visualize-massive-macromolecul.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L08_T019` Defining conformational flexibility exclusively through backbone Phi Ï† and Psi Ïˆ rotation angles
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-08-intro-to-protein-structure.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L08_T020` Tracking the stabilizing rigidity of the Omega Ï‰ trans bond and rare cis-proline constraints
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-08-intro-to-protein-structure.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L08_T021` Postulating that the native biological fold represents the absolute global free energy minimum
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-08-intro-to-protein-structure.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L08_T022` Addressing Levinthalâ€™s Paradox: finding the minimum energy fold without an exhaustive search
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-08-intro-to-protein-structure.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L08_T023` Narrowing structural search spaces rapidly using a thermodynamic folding funnel landscape
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-08-intro-to-protein-structure.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L08_T024` Correlating rapid [[protein]] folding speeds with a lower topological contact order
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-08-intro-to-protein-structure.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L08_T025` Plotting accessible backbone angles and secondary structure preferences on a Ramachandran plot
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-08-intro-to-protein-structure.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L08_T026` Forming alpha helices through precise i to i+4 hydrogen bonding along the backbone
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-08-intro-to-protein-structure.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L08_T027` Arranging parallel and anti-parallel extended strands to create stable beta-sheet scaffolds
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-08-intro-to-protein-structure.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L08_T028` Building 2D contact maps to visualize structural residue-residue spatial proximities
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-08-intro-to-protein-structure.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L08_T029` Inferring hidden 3D structural contacts computationally through co-evolutionary MSAs
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-08-intro-to-protein-structure.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L08_T030` Evaluating overall structural alignment fidelity mathematically using Root Mean Square Deviation RMSD
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/evaluating-overall-structural-alignment-fidelity-mathematically-using-root-mean.md`
+  - Status: `seed`; verified: `false`
+
+### [[lecture-09-protein-folding-algorithms|Lecture 9 - Protein Folding Algorithms]]
+- Source: `Raw/Sources/lecture_09_protein_folding_algorithms.md`
+- Backlog count: 30
+
+- [ ] `L09_T001` Ab Initio Prediction and Energy Functions: Electrostatics, Van der Waals, Hydrogen bonds
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-09-protein-folding-algorithms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L09_T002` Boltzmann Distribution: Energies vs. Probabilities
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/boltzmann-distribution-energies-vs-probabilities.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L09_T003` AlphaFold 2 Architecture: MSA, Pair Representation, Evoformers
+  - Type: `named_entity`
+  - Suggested page: `Wiki/Entities/alphafold-2-architecture-msa-pair-representation-evoformers.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L09_T004` Embeddings and Softmax
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/embeddings-and-softmax.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L09_T005` Predicting ab initio structures entirely from sequence without relying on homologous templates
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/predicting-ab-initio-structures-entirely-from-sequence-without-relying-on-homolo.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L09_T006` Modeling physical energy functions: electrostatics, van der Waals, hydrogen bonding, and hydrophobicity
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-09-protein-folding-algorithms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L09_T007` Simulating real-time molecular interactions and flexibility using Molecular Dynamics MD trajectories
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-09-protein-folding-algorithms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L09_T008` Applying Coulombâ€™s law and adjusting for water's strong dielectric shielding in electrostatics
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-09-protein-folding-algorithms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L09_T009` Defining the Bjerrum length about 7 Ã… in water where electrostatic interactions equal thermal energy
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-09-protein-folding-algorithms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L09_T010` Balancing short-range steric repulsion with long-range attraction via the Lennard-Jones potential
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-09-protein-folding-algorithms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L09_T011` Driving core [[protein]] compaction entropically by burying hydrophobic residues to release ordered water
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-09-protein-folding-algorithms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L09_T012` Approximating hydrophobic energies by calculating Solvent-Accessible Surface Area SASA
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-09-protein-folding-algorithms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L09_T013` Calculating specific state probabilities from energy differences using the Boltzmann distribution
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/calculating-specific-state-probabilities-from-energy-differences-using-the-boltz.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L09_T014` Normalizing all possible system configurations via the statistical partition function Z
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/normalizing-all-possible-system-configurations-via-the-statistical-partition-fun.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L09_T015` Tetramerizing the Lac repressor to simultaneously bind operators O1 and O2/O3 creating a [[dna|DNA]] loop
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-09-protein-folding-algorithms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L09_T016` Compensating for lost binding sites energetically via Boltzmann calculations Î”E = -kT ln(2)
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/compensating-for-lost-binding-sites-energetically-via-boltzmann-calculations-e-k.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L09_T017` Solving the [[protein]] folding problem accurately to near-experimental resolution via AlphaFold 2
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/solving-the-protein-folding-problem-accurately-to-near-experimental-resolution-v.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L09_T018` Inferring non-standard structural elements such as zinc ion placement implicitly within deep learning
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/inferring-non-standard-structural-elements-such-as-zinc-ion-placement-implicitly.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L09_T019` Extracting evolutionary proximity constraints directly from Multiple Sequence Alignments MSAs
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/extracting-evolutionary-proximity-constraints-directly-from-multiple-sequence-al.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L09_T020` Modeling physical constraints explicitly through AlphaFold's 128-dimensional Pair Representation
+  - Type: `named_entity`
+  - Suggested page: `Wiki/Entities/modeling-physical-constraints-explicitly-through-alphafolds-128-dimensional-pair.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L09_T021` Applying non-linear activation functions ReLU and Sigmoid to enable complex deep learning approximations
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-09-protein-folding-algorithms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L09_T022` Updating model weights iteratively via objective loss functions, backpropagation, and gradient descent
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/updating-model-weights-iteratively-via-objective-loss-functions-backpropagation.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L09_T023` Converting unbound output logits into normalized probability distributions using Softmax
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/converting-unbound-output-logits-into-normalized-probability-distributions-using.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L09_T024` Drawing direct mathematical equivalents between Softmax networks and the Boltzmann distribution
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/drawing-direct-mathematical-equivalents-between-softmax-networks-and-the-boltzma.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L09_T025` Embedding discrete categorical amino acids into continuous high-dimensional vector spaces
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/embedding-discrete-categorical-amino-acids-into-continuous-high-dimensional-vect.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L09_T026` Combining features seamlessly via concatenation and high-dimensional vector addition
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-09-protein-folding-algorithms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L09_T027` Ensuring independent signal preservation in high dimensions due to near-orthogonal low cosine similarity
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-09-protein-folding-algorithms.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L09_T028` Querying composite sequence vectors mathematically using targeted dot products
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/querying-composite-sequence-vectors-mathematically-using-targeted-dot-products.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L09_T029` Enforcing valid 3D geometric structures in AlphaFold using strict triangle inequality constraints
+  - Type: `named_entity`
+  - Suggested page: `Wiki/Entities/enforcing-valid-3d-geometric-structures-in-alphafold-using-strict-triangle-inequ.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L09_T030` Iteratively updating structural models across 48 interacting Evoformer [[attention-mechanism|attention]] blocks
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-09-protein-folding-algorithms.md`
+  - Status: `seed`; verified: `false`
+
+### [[lecture-10-protein-structure-with-transformers|Lecture 10 - Protein Structure with Transformers]]
+- Source: `Raw/Sources/lecture_10_protein_structure_with_transformers.md`
+- Backlog count: 29
+
+- [ ] `L10_T001` [[transformer|Transformer]] Architecture: Self-Attention, Multi-Headed Attention, Residual Connections
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/transformer-architecture-self-attention-multi-headed-attention-residual-connecti.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L10_T002` AlphaFold 3: Diffusion Models, Molecular Complex Modeling
+  - Type: `named_entity`
+  - Suggested page: `Wiki/Entities/alphafold-3-diffusion-models-molecular-complex-modeling.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L10_T003` Protein Design: Generative AI, Structural optimization
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-10-protein-structure-with-transformers.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L10_T004` Replacing external physics models with end-to-end differentiable structure objectives distances and angles
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-10-protein-structure-with-transformers.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L10_T005` Providing localized confidence metrics via the Predicted Local Distance Difference Test pLDDT
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-10-protein-structure-with-transformers.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L10_T006` Focusing dynamic relevance between all sequence pairs simultaneously using Self-Attention
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-10-protein-structure-with-transformers.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L10_T007` Dividing [[attention-mechanism|attention]] into multiple heads to capture competing structural and biochemical constraints
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/dividing-attention-into-multiple-heads-to-capture-competing-structural-and-bioch.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L10_T008` Encoding sequence order context mathematically via explicit positional embeddings
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/encoding-sequence-order-context-mathematically-via-explicit-positional-embedding.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L10_T009` Streamlining AlphaFold 3 by bottlenecking all inputs directly into the core pair representation
+  - Type: `named_entity`
+  - Suggested page: `Wiki/Entities/streamlining-alphafold-3-by-bottlenecking-all-inputs-directly-into-the-core-pair.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L10_T010` Generating accurate structures probabilistically from noise using Generative AI Diffusion models
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-10-protein-structure-with-transformers.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L10_T011` Expanding modeling capabilities to multi-chain [[protein]], [[dna|DNA]], and ligand molecular complexes
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/expanding-modeling-capabilities-to-multi-chain-protein-dna-and-ligand-molecular.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L10_T012` Overcoming sequence-based constraints to design entirely synthetic highly stable novel folds such as Top7
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-10-protein-structure-with-transformers.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L10_T013` Sculpting new [[protein]] backbones iteratively from noise using RF Diffusion
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-10-protein-structure-with-transformers.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L10_T014` Predicting optimized amino acid sequences to fit designed backbones via Protein MPNN
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-10-protein-structure-with-transformers.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L10_T015` Validating the folding feasibility of generative designs using AlphaFold pLDDT scores
+  - Type: `named_entity`
+  - Suggested page: `Wiki/Entities/validating-the-folding-feasibility-of-generative-designs-using-alphafold-plddt-s.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L10_T016` Adapting Large Language Model LLM architectures for biological Protein Language Models PLMs
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-10-protein-structure-with-transformers.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L10_T017` Bypassing sequential information bottlenecks found in traditional RNN encoder-decoder models
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-10-protein-structure-with-transformers.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L10_T018` Processing sequence tokens simultaneously in parallel via [[transformer|Transformer]] architectures
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/processing-sequence-tokens-simultaneously-in-parallel-via-transformer-architectu.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L10_T019` Generating position-specific contextual awareness via continuous sinusoidal embeddings
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/generating-position-specific-contextual-awareness-via-continuous-sinusoidal-embe.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L10_T020` Propagating input signals effectively across deep networks using residual skip connections
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-10-protein-structure-with-transformers.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L10_T021` Standardizing varying-length sequence activations using Token/Layer Normalization instead of Batch Norm
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-10-protein-structure-with-transformers.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L10_T022` Structuring [[attention-mechanism|attention]] mechanisms around learned Query, Key, and Value Q, K, V matrices
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-10-protein-structure-with-transformers.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L10_T023` Stabilizing neural gradient flow via mathematically scaled dot-product [[attention-mechanism|attention]] scores
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/stabilizing-neural-gradient-flow-via-mathematically-scaled-dot-product-attention.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L10_T024` Utilizing Encoder-only architectures such as ESM specifically for deep feature extraction
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-10-protein-structure-with-transformers.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L10_T025` Implementing Decoder-only models for autoregressive sequence generation tasks
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/implementing-decoder-only-models-for-autoregressive-sequence-generation-tasks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L10_T026` Employing Encoder-Decoder architectures for complex input-to-output translation tasks
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/employing-encoder-decoder-architectures-for-complex-input-to-output-translation.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L10_T027` Visualizing structural interactions implicitly learned inside specific [[attention-mechanism|attention]] heads
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-10-protein-structure-with-transformers.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L10_T028` Scaling deep learning architectures to hundreds of layers without degradation via skip connections
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-10-protein-structure-with-transformers.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L10_T029` Isolating and fine-tuning generalized PLM embeddings for targeted downstream transfer learning
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/isolating-and-fine-tuning-generalized-plm-embeddings-for-targeted-downstream-tra.md`
+  - Status: `seed`; verified: `false`
+
+### [[lecture-11-protein-language-models|Lecture 11 - Protein Language Models]]
+- Source: `Raw/Sources/lecture_11_protein_language_models.md`
+- Backlog count: 29
+
+- [ ] `L11_T001` NLP Parallels and The Protein Alphabet
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-11-protein-language-models.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L11_T002` Multiple Sequence Alignments MSAs and Co-evolution
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/multiple-sequence-alignments-msas-and-co-evolution.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L11_T003` Mutation Effect Prediction: Site-independent vs. pairwise interactions
+  - Type: `comparison`
+  - Suggested page: `Wiki/Comparisons/mutation-effect-prediction-site-independent-vs-pairwise-interactions.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L11_T004` Masked Language Modeling: ESM, UniRef Training
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-11-protein-language-models.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L11_T005` Drawing direct structural parallels between NLP text processing and amino acid strings
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-11-protein-language-models.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L11_T006` Assembling massive training corpora from NCBI, GISAID, and the Protein Data Bank
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/assembling-massive-training-corpora-from-ncbi-gisaid-and-the-protein-data-bank.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L11_T007` Detecting physical binding interfaces via coevolutionary constraints in PLMs
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-11-protein-language-models.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L11_T008` Evaluating mutation pathogenicity and variant effects through evolutionary models such as EVE
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-11-protein-language-models.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L11_T009` Bypassing rigid one-hot encoding by allowing models to implicitly learn biochemical properties
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/bypassing-rigid-one-hot-encoding-by-allowing-models-to-implicitly-learn-biochemi.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L11_T010` Mapping evolutionary substitution likelihoods using empirical BLOSUM matrices
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/mapping-evolutionary-substitution-likelihoods-using-empirical-blosum-matrices.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L11_T011` Detecting stabilizing dependencies by analyzing side-chain steric clashes and size compatibility
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-11-protein-language-models.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L11_T012` Calculating isolated sequence log-likelihoods via Site-Independent probability models
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/calculating-isolated-sequence-log-likelihoods-via-site-independent-probability-m.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L11_T013` Overcoming the context-ignorance of independent models to capture critical epistasis
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-11-protein-language-models.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L11_T014` Using Pairwise Interaction Models to statistically capture joint frequencies and co-evolving residues
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-11-protein-language-models.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L11_T015` Processing highly variable sequences such as antibody CDR3 without forcing them into MSAs
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/processing-highly-variable-sequences-such-as-antibody-cdr3-without-forcing-them.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L11_T016` Training PLMs autoregressively by repeatedly predicting the next amino acid in a chain
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-11-protein-language-models.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L11_T017` Capturing bidirectional structural context through Masked Language Modeling MLM
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-11-protein-language-models.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L11_T018` Masking and predicting 15 percent of sequence tokens to force deep feature learning
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-11-protein-language-models.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L11_T019` Preventing overrepresentation bias by clustering training data via UniRef50 and UniRef90
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-11-protein-language-models.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L11_T020` Scoring specific mutational impacts directly by calculating negative log probability ratios
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/scoring-specific-mutational-impacts-directly-by-calculating-negative-log-probabi.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L11_T021` Benchmarking comprehensive model performance against ProteinGym deep mutational scanning data
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-11-protein-language-models.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L11_T022` Correlating high predictive accuracy with the depth of evolutionary sequence density
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-11-protein-language-models.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L11_T023` Generating sequence-aware dynamic embeddings that change based on internal [[protein]] context
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/generating-sequence-aware-dynamic-embeddings-that-change-based-on-internal-prote.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L11_T024` Creating global [[protein]] representations by averaging all individual amino acid embeddings
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/creating-global-protein-representations-by-averaging-all-individual-amino-acid-e.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L11_T025` Clustering PLM embeddings via t-SNE to accurately classify alpha vs. beta-dominant [[protein|proteins]]
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/clustering-plm-embeddings-via-t-sne-to-accurately-classify-alpha-vs-beta-dominan.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L11_T026` Enhancing purely sequence-based tokens with localized 3D structural environment data SA Pro
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-11-protein-language-models.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L11_T027` Interpreting position-to-position [[attention-mechanism|attention]] map matrices as proxies for true 3D structural contacts
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-11-protein-language-models.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L11_T028` Training secondary filtering models to identify and weight the most structurally relevant [[attention-mechanism|attention]] heads
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-11-protein-language-models.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L11_T029` Predicting immune escape mutations in the SARS-CoV-2 spike [[protein]] using exclusively pre-pandemic data
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/predicting-immune-escape-mutations-in-the-sars-cov-2-spike-protein-using-exclusi.md`
+  - Status: `seed`; verified: `false`
+
+### [[lecture-12-dna-language-models|Lecture 12 - DNA Language Models]]
+- Source: `Raw/Sources/lecture_12_dna_language_models.md`
+- Backlog count: 29
+
+- [ ] `L12_T001` [[rna|RNA]] Splicing Models: SpliceAI, 1D Convolutions
+  - Type: `named_entity`
+  - Suggested page: `Wiki/Entities/rna-splicing-models-spliceai-1d-convolutions.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L12_T002` [[dna|DNA]] Foundation Models: DNABERT, Tokenization via k-mers
+  - Type: `named_entity`
+  - Suggested page: `Wiki/Entities/dna-foundation-models-dnabert-tokenization-via-k-mers.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L12_T003` Advanced Architectures: Nucleotide [[transformer|Transformer]], SegmentNT, Hyena, Borzoi
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/advanced-architectures-nucleotide-transformer-segmentnt-hyena-borzoi.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L12_T004` Predicting functional [[rna|RNA]] splicing boundaries based on complex weakly conserved donor/acceptor signals
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-12-dna-language-models.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L12_T005` Identifying localized [[dna|DNA]] motifs rapidly using 1D Convolutional Neural Networks CNNs
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/identifying-localized-dna-motifs-rapidly-using-1d-convolutional-neural-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L12_T006` Convolving infection and shedding functions practically to estimate viral loads in wastewater
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-12-dna-language-models.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L12_T007` Defining convolution mechanics: Kernels sliding across an input to generate a feature map
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-12-dna-language-models.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L12_T008` Reducing spatial dimensions effectively while preserving strong signals using Stride and Max Pooling
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-12-dna-language-models.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L12_T009` Encoding nucleotide strings into fixed 4-channel inputs via strict one-hot formatting
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-12-dna-language-models.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L12_T010` Designing CNN layers such that output channels align with specific functional genomic features
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/designing-cnn-layers-such-that-output-channels-align-with-specific-functional-ge.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L12_T011` Utilizing CNN dilation parameters in SpliceAI to capture distant contexts without increasing computational cost
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/utilizing-cnn-dilation-parameters-in-spliceai-to-capture-distant-contexts-withou.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L12_T012` Outputting position-specific logits and converting them via softmax to Donor/Acceptor/Neither predictions
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/outputting-position-specific-logits-and-converting-them-via-softmax-to-donor-acc.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L12_T013` Training [[dna|DNA]] Foundation Models on large-scale genomic masking tasks to learn regulatory principles
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-12-dna-language-models.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L12_T014` Transferring rich foundational [[dna|DNA]] embeddings to specialized tasks like [[enhancer]] or [[promoter]] prediction
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/transferring-rich-foundational-dna-embeddings-to-specialized-tasks-like-enhancer.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L12_T015` Tokenizing [[dna|DNA]] sequences computationally using overlapping k-mers such as 3-mers or 6-mers
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-12-dna-language-models.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L12_T016` Applying 12 deep layers of self-[[attention-mechanism|attention]] across sequence tokens in the DNABERT architecture
+  - Type: `named_entity`
+  - Suggested page: `Wiki/Entities/applying-12-deep-layers-of-self-attention-across-sequence-tokens-in-the-dnabert.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L12_T017` Fine-tuning base DNABERT models specifically to predict targeted Transcription Factor Binding Sites
+  - Type: `named_entity`
+  - Suggested page: `Wiki/Entities/fine-tuning-base-dnabert-models-specifically-to-predict-targeted-transcription-f.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L12_T018` Interpreting DNABERT's internal [[attention-mechanism|attention]] maps to physically locate genomic regulatory motifs
+  - Type: `named_entity`
+  - Suggested page: `Wiki/Entities/interpreting-dnaberts-internal-attention-maps-to-physically-locate-genomic-regul.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L12_T019` Extending contextual depth handling capabilities via the 6-mer based Nucleotide [[transformer|Transformer]] model
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/extending-contextual-depth-handling-capabilities-via-the-6-mer-based-nucleotide.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L12_T020` Achieving accurate task evaluation without specialized fine-tuning via Zero-shot embedding similarity predictions
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/achieving-accurate-task-evaluation-without-specialized-fine-tuning-via-zero-shot.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L12_T021` Appending a convolutional UNet segmentation head onto [[transformer|Transformers]] to create SegmentNT
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/appending-a-convolutional-unet-segmentation-head-onto-transformers-to-create-seg.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L12_T022` Progressively downsampling input data to bottleneck high-level abstract features in UNet
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-12-dna-language-models.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L12_T023` Utilizing UNet skip connections to bypass the bottleneck and retain high-resolution genomic coordinates
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-12-dna-language-models.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L12_T024` Deploying SegmentNT to fully delineate continuous introns, exons, and regulatory polyA sites
+  - Type: `named_entity`
+  - Suggested page: `Wiki/Entities/deploying-segmentnt-to-fully-delineate-continuous-introns-exons-and-regulatory-p.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L12_T025` Solving the quadratic [[transformer|Transformer]] bottleneck scaling issue using Hyena's L log L complexity
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/solving-the-quadratic-transformer-bottleneck-scaling-issue-using-hyenas-l-log-l.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L12_T026` Integrating robust convolutional layers with RNN-inspired sequential information gating in Hyena
+  - Type: `named_entity`
+  - Suggested page: `Wiki/Entities/integrating-robust-convolutional-layers-with-rnn-inspired-sequential-information.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L12_T027` Producing highly homogeneous and functionally distinct gene type clusters in Hyenaâ€™s [[latent-space]]
+  - Type: `named_entity`
+  - Suggested page: `Wiki/Entities/producing-highly-homogeneous-and-functionally-distinct-gene-type-clusters-in-hye.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L12_T028` Constructing EvoDNA striped Hyena by combining efficient gating algorithms with targeted [[attention-mechanism|attention]] layers
+  - Type: `named_entity`
+  - Suggested page: `Wiki/Entities/constructing-evodna-striped-hyena-by-combining-efficient-gating-algorithms-with.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L12_T029` Predicting genome-wide mRNA expression directly from sequence using the Borzoi UNet+[[transformer|Transformer]] model
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/predicting-genome-wide-mrna-expression-directly-from-sequence-using-the-borzoi-u.md`
+  - Status: `seed`; verified: `false`
+
+## M3 - Chemistry and Therapeutics
+
+### [[lecture-13-drug-development-intro|Lecture 13 - Drug Development Intro]]
+- Source: `Raw/Sources/lecture_13_drug_development_intro.md`
+- Backlog count: 31
+
+- [ ] `L13_T001` Drug Classification: Small [[[[molecule]]|molecules]], Biologics, Live biotherapeutic agents, Cell therapies
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-13-drug-development-intro.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T002` Pharmacokinetics PK: Absorption, Distribution, Metabolism, Excretion
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/pharmacokinetics-pk-absorption-distribution-metabolism-excretion.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T003` Pharmacodynamics PD: Drug-receptor interactions, Affinity, Potency
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-13-drug-development-intro.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T004` Development Timeline and Structure-Activity Relationships SAR
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-13-drug-development-intro.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T005` Defining a therapeutic drug strictly based on inclusion in an official regulatory pharmacopoeia
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-13-drug-development-intro.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T006` Categorically separating therapeutic drugs from medical foods, supplements, and physical medical devices
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/categorically-separating-therapeutic-drugs-from-medical-foods-supplements-and-ph.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T007` Tracing the historical extraction of blockbuster modern drugs such as Opiates, Aspirin, Artemisinin from natural plants
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/tracing-the-historical-extraction-of-blockbuster-modern-drugs-such-as-opiates-as.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T008` Synthesizing small [[molecule]] drugs chemically, typically under 500 Daltons, to ensure intracellular penetration
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/synthesizing-small-molecule-drugs-chemically-typically-under-500-daltons-to-ensu.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T009` Producing complex large-scale Biologics antibodies and vaccines using living cell cultures or fermentation
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-13-drug-development-intro.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T010` Administering biologics exclusively via IV or injection to bypass digestive tract degradation
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-13-drug-development-intro.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T011` Employing Live Biotherapeutic Agents such as gut microbiome modifications to treat infections like C. diff
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/employing-live-biotherapeutic-agents-such-as-gut-microbiome-modifications-to-tre.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T012` Engineering patient-derived live Cell-Based Therapies such as targeted CAR T-cells for oncology
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-13-drug-development-intro.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T013` Pairing treatments with Companion Diagnostics such as HER2 testing to advance precision personalized medicine
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-13-drug-development-intro.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T014` Identifying failing business models driving the dangerous lack of novel antimicrobial antibiotic development
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-13-drug-development-intro.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T015` Restructuring economic incentives via government subsidies, exclusivity extensions, and healthcare subscription models
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-13-drug-development-intro.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T016` Defining Pharmacokinetics PK: modeling exactly what the body does to an administered drug
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-13-drug-development-intro.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T017` Analyzing drug absorption rates based on delivery route, hydrophobicity, local pH, and total bioavailability
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-13-drug-development-intro.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T018` Measuring drug distribution dynamically using blood flow, [[protein]] binding rates, and Volume of Distribution Vd
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/measuring-drug-distribution-dynamically-using-blood-flow-protein-binding-rates-a.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T019` Bypassing the restrictive Blood-Brain Barrier BBB using customized nanoparticles or direct intranasal delivery
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-13-drug-development-intro.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T020` Metabolizing drugs hepatically via Phase I Cytochrome P450 modification and Phase II Conjugation
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-13-drug-development-intro.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T021` Determining effective dosing schedules by calculating the drug's half-life through renal or biliary excretion
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-13-drug-development-intro.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T022` Modeling PK mathematically using single-compartment versus multi-compartment physiological representations
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/modeling-pk-mathematically-using-single-compartment-versus-multi-compartment-phy.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T023` Defining Pharmacodynamics PD: modeling exactly what the administered drug does to the body
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-13-drug-development-intro.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T024` Modulating cellular receptors directly using full agonists, partial agonists, or blocking antagonists
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-13-drug-development-intro.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T025` Targeting highly druggable pathways through G [[protein]]-coupled receptors GPCRs or specific ion channels
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-13-drug-development-intro.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T026` Evaluating drug potency quantitatively by calculating the Effective Concentration 50 percent EC50
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-13-drug-development-intro.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T027` Balancing efficacy and safety within the Therapeutic Window between maximal effect Emax and toxic dosage
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/balancing-efficacy-and-safety-within-the-therapeutic-window-between-maximal-effe.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T028` Managing clinical Tolerance receptor downregulation versus Sensitization receptor upregulation over time
+  - Type: `comparison`
+  - Suggested page: `Wiki/Comparisons/managing-clinical-tolerance-receptor-downregulation-versus-sensitization-recepto.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T029` Assessing long-term Toxicology parameters: genotoxicity, reproductive harm, and long-term carcinogenicity
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-13-drug-development-intro.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T030` Evaluating drug interactions: synergistic, additive, and antagonistic combination effects
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-13-drug-development-intro.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L13_T031` Navigating massive Phase I, II, and III clinical trial costs alongside extreme multi-stage attrition rates
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/navigating-massive-phase-i-ii-and-iii-clinical-trial-costs-alongside-extreme-mul.md`
+  - Status: `seed`; verified: `false`
+
+### [[lecture-14-chemistry-gnns|Lecture 14 - Chemistry GNNs]]
+- Source: `Raw/Sources/lecture_14_chemistry_gnns.md`
+- Backlog count: 30
+
+- [ ] `L14_T001` Molecular Representations: SMILES, SMARTS, SELFIES, InChI, Graphs
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-14-chemistry-gnns.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L14_T002` Morgan Fingerprints: Atom-centric encoding, Bit hashing
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/morgan-fingerprints-atom-centric-encoding-bit-hashing.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L14_T003` Geometric Deep Learning: Invariance vs. Equivariance
+  - Type: `comparison`
+  - Suggested page: `Wiki/Comparisons/geometric-deep-learning-invariance-vs-equivariance.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L14_T004` [[graph-neural-networks|Graph Neural Networks]]: [[graph-neural-networks|GNN]] Message Passing, Node/Edge/Graph predictions
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/graph-neural-networks-gnn-message-passing-node-edge-graph-predictions.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L14_T005` Encoding complex molecular topologies linearly into computational databases using the SMILES format
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-14-chemistry-gnns.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L14_T006` Indicating specific aromatic ring structures in SMILES strings using lowercase letters
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-14-chemistry-gnns.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L14_T007` Defining branched side chains via parentheses and connected ring closures via numbers in SMILES
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-14-chemistry-gnns.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L14_T008` Specifying disconnected ions and formal charges in SMILES using periods and square brackets
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-14-chemistry-gnns.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L14_T009` Overcoming SMILES synthetic ambiguity and invalid string generation by utilizing SELFIES notation
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-14-chemistry-gnns.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L14_T010` Executing precise substructure pattern matching and searching utilizing the SMARTS format
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-14-chemistry-gnns.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L14_T011` Standardizing molecular representations into unique one-to-one correspondences using InChI strings
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-14-chemistry-gnns.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L14_T012` Compressing structural chemistry into fixed-length binary vectors via Morgan circular fingerprints
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/compressing-structural-chemistry-into-fixed-length-binary-vectors-via-morgan-cir.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L14_T013` Hashing local chemical environments around each atom utilizing a predefined neighbor radius
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/hashing-local-chemical-environments-around-each-atom-utilizing-a-predefined-neig.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L14_T014` Managing hash collisions in fingerprints by extending the total vector length, for example 2048 bits
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-14-chemistry-gnns.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L14_T015` Representing [[[[molecule]]|molecules]] losslessly as graphs, explicitly treating all atoms as nodes and bonds as edges
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/representing-molecules-losslessly-as-graphs-explicitly-treating-all-atoms-as-nod.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L14_T016` Mapping connections computationally via symmetric or asymmetric adjacency matrices and sparse lists
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-14-chemistry-gnns.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L14_T017` Executing chemical similarity searches rapidly to prioritize compound libraries for virtual screening
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/executing-chemical-similarity-searches-rapidly-to-prioritize-compound-libraries.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L14_T018` Predicting critical ADME and Toxicity profiles computationally via QSAR graph modeling
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-14-chemistry-gnns.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L14_T019` Contrasting strict 2D grid convolutions CNNs with flexible unstructured graph processing [[graph-neural-networks|GNNs]]
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/contrasting-strict-2d-grid-convolutions-cnns-with-flexible-unstructured-graph-pr.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L14_T020` Generalizing deep learning mathematically to non-Euclidean data graphs and point clouds via Geometric Deep Learning
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/generalizing-deep-learning-mathematically-to-non-euclidean-data-graphs-and-point.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L14_T021` Ensuring output stability under transformations through mathematical Invariance and Equivariance
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/ensuring-output-stability-under-transformations-through-mathematical-invariance.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L14_T022` Utilizing [[graph-neural-networks|GNNs]] strategically for distinct Node-level, Edge-level, and global Graph-level prediction tasks
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/utilizing-gnns-strategically-for-distinct-node-level-edge-level-and-global-graph.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L14_T023` Embedding initial latent vectors for each node using basic atomic properties mass, charge, hybridization
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/embedding-initial-latent-vectors-for-each-node-using-basic-atomic-properties-mas.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L14_T024` Aggregating information iteratively from local neighborhoods through the [[graph-neural-networks|GNN]] Message Passing protocol
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/aggregating-information-iteratively-from-local-neighborhoods-through-the-gnn-mes.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L14_T025` Selecting appropriate message aggregation functions: Sum, Mean, or Max pooling
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-14-chemistry-gnns.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L14_T026` Enforcing strict permutation invariance, guaranteeing results ignore neighbor input order
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-14-chemistry-gnns.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L14_T027` Updating node states utilizing learnable weight matrices and non-linear activation functions such as ReLU
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-14-chemistry-gnns.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L14_T028` Expanding the structural receptive field of each node progressively with each additional [[graph-neural-networks|GNN]] layer
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/expanding-the-structural-receptive-field-of-each-node-progressively-with-each-ad.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L14_T029` Avoiding oversmoothing and total information dilution caused by excessive [[graph-neural-networks|GNN]] layer depth
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/avoiding-oversmoothing-and-total-information-dilution-caused-by-excessive-gnn-la.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L14_T030` Centralizing global graph information simultaneously through fully-connected Virtual Nodes
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-14-chemistry-gnns.md`
+  - Status: `seed`; verified: `false`
+
+### [[lecture-15-generating-new-molecules|Lecture 15 - Generating New Molecules]]
+- Source: `Raw/Sources/lecture_15_generating_new_molecules.md`
+- Backlog count: 31
+
+- [ ] `L15_T001` Generative Models: Autoencoders, Sparse Autoencoders
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-15-generating-new-molecules.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T002` Variational Autoencoders: VAEs, ELBO, KL Divergence, Reparameterization trick
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/variational-autoencoders-vaes-elbo-kl-divergence-reparameterization-trick.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T003` Generative Adversarial Networks GANs vs. VAEs
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/generative-adversarial-networks-gans-vs-vaes.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T004` Junction Tree VAEs and AI for Antibiotics: Halicin Case Study
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/junction-tree-vaes-and-ai-for-antibiotics-halicin-case-study.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T005` Generating novel chemical and biological structures algorithmically by learning underlying data distributions
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/generating-novel-chemical-and-biological-structures-algorithmically-by-learning.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T006` Designing Basic Autoencoders by compressing input to a latent bottleneck and decoding it back
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-15-generating-new-molecules.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T007` Overcoming the unstructured non-samplable [[latent-space]] limitations found in basic autoencoders
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-15-generating-new-molecules.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T008` Imposing probabilistic mathematical structures on latent spaces utilizing Variational Autoencoders VAEs
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/imposing-probabilistic-mathematical-structures-on-latent-spaces-utilizing-variat.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T009` Encoding high-dimensional input points as distributions mean and variance rather than discrete single vectors
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/encoding-high-dimensional-input-points-as-distributions-mean-and-variance-rather.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T010` Measuring the deviation of learned distributions from a standard Gaussian prior utilizing KL Divergence
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/measuring-the-deviation-of-learned-distributions-from-a-standard-gaussian-prior.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T011` Optimizing target [[[[molecule]]|molecules]] by performing smooth interpolations between points in the continuous VAE [[latent-space]]
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/optimizing-target-molecules-by-performing-smooth-interpolations-between-points-i.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T012` Isolating and interpreting specific model features by enforcing inactivity in Sparse Autoencoders
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-15-generating-new-molecules.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T013` Modeling the complex joint probability of inputs X and latent variables Z explicitly in VAEs
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/modeling-the-complex-joint-probability-of-inputs-x-and-latent-variables-z-explic.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T014` Approximating the fundamentally intractable true posterior distribution via the learned encoder network
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/approximating-the-fundamentally-intractable-true-posterior-distribution-via-the.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T015` Optimizing model training mathematically by maximizing the Evidence Lower Bound ELBO objective function
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/optimizing-model-training-mathematically-by-maximizing-the-evidence-lower-bound.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T016` Balancing the Reconstruction Loss which separates points against KL Regularization which clusters them to the origin
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/balancing-the-reconstruction-loss-which-separates-points-against-kl-regularizati.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T017` Accepting inherent output blurriness in VAEs as a necessary trade-off for improved spatial generalization
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/accepting-inherent-output-blurriness-in-vaes-as-a-necessary-trade-off-for-improv.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T018` Addressing the impossibility of executing backpropagation directly through a stochastic random sampling step
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-15-generating-new-molecules.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T019` Resolving the gradient bottleneck completely by applying the Reparameterization Trick shifting the noise factor
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/resolving-the-gradient-bottleneck-completely-by-applying-the-reparameterization.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T020` Scaling the KL divergence penalty specifically via Beta-VAEs to forcefully disentangle latent feature dimensions
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/scaling-the-kl-divergence-penalty-specifically-via-beta-vaes-to-forcefully-disen.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T021` Generating hyper-realistic outputs via the adversarial zero-sum game of Generative Adversarial Networks GANs
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/generating-hyper-realistic-outputs-via-the-adversarial-zero-sum-game-of-generati.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T022` Managing the severe risk of GAN mode collapse and significant training instability versus VAE consistency
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/managing-the-severe-risk-of-gan-mode-collapse-and-significant-training-instabili.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T023` Preventing the generation of chemically invalid intermediates commonly produced by sequence-based SMILES models
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/preventing-the-generation-of-chemically-invalid-intermediates-commonly-produced.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T024` Decomposing [[[[molecule]]|molecules]] safely into valid chemical substructures utilizing the Junction Tree VAE architecture
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/decomposing-molecules-safely-into-valid-chemical-substructures-utilizing-the-jun.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T025` Fusing dual latent spaces simultaneously: a Graph spatial embedding and a Tree hierarchical embedding
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/fusing-dual-latent-spaces-simultaneously-a-graph-spatial-embedding-and-a-tree-hi.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T026` Overcoming the massive costs and limited diversity associated with traditional high-throughput small [[molecule]] screening
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-15-generating-new-molecules.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T027` Implementing bond-centric message passing in [[graph-neural-networks|GNNs]] to prioritize chemical linkage properties over atom nodes
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/implementing-bond-centric-message-passing-in-gnns-to-prioritize-chemical-linkage.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T028` Training predictive [[graph-neural-networks|GNN]] models comprehensively on the Broad Instituteâ€™s vast drug repurposing libraries
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/training-predictive-gnn-models-comprehensively-on-the-broad-institute-s-vast-dru.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T029` Ranking the top computational compound candidates to drastically improve experimental lab hit rates
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-15-generating-new-molecules.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T030` Discovering Halicin by repurposing a targeted human kinase inhibitor into a broad-spectrum antibiotic
+  - Type: `named_entity`
+  - Suggested page: `Wiki/Entities/discovering-halicin-by-repurposing-a-targeted-human-kinase-inhibitor-into-a-broa.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L15_T031` Validating Halicin's in vivo efficacy against highly resistant C. diff strains in mouse models
+  - Type: `named_entity`
+  - Suggested page: `Wiki/Entities/validating-halicins-in-vivo-efficacy-against-highly-resistant-c-diff-strains-in.md`
+  - Status: `seed`; verified: `false`
+
+## M4 - Genetics, Complex Disease, and Mechanism
+
+### [[lecture-16-training-neural-networks|Lecture 16 - Training Neural Networks]]
+- Source: `Raw/Sources/lecture_16_training_neural_networks.md`
+- Backlog count: 32
+
+- [ ] `L16_T001` Optimization Techniques: Gradient Descent, Momentum, AdaGrad, RMSprop, Adam
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/optimization-techniques-gradient-descent-momentum-adagrad-rmsprop-adam.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T002` Bias-Variance Tradeoff and Overfitting
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-16-training-neural-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T003` Regularization: L1/L2, Dropout, Batch Normalization
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-16-training-neural-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T004` Establishing predicting Blood-Brain Barrier BBB permeability as a standard binary classification problem
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/establishing-predicting-blood-brain-barrier-bbb-permeability-as-a-standard-binar.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T005` Calculating baseline metrics carefully to account for severe class imbalances in initial datasets
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-16-training-neural-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T006` Transforming standard SMILES strings into 768-dimensional numerical embeddings using a pre-trained tokenizer
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/transforming-standard-smiles-strings-into-768-dimensional-numerical-embeddings-u.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T007` Managing PyTorch mini-batching effectively by implementing custom Dataset and DataLoader pipeline classes
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/managing-pytorch-mini-batching-effectively-by-implementing-custom-dataset-and-da.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T008` Reducing dimensions progressively via a simple feedforward architecture of sequential Linear layers
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-16-training-neural-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T009` Introducing critical non-linearity into the network by applying intermediate ReLU activation functions
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-16-training-neural-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T010` Converting raw output logits into 0-to-1 probabilities by applying a final Sigmoid layer
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-16-training-neural-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T011` Calculating the error between predictions and true labels utilizing the Binary Cross-Entropy BCE loss function
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/calculating-the-error-between-predictions-and-true-labels-utilizing-the-binary-c.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T012` Executing backpropagation to compute the precise gradient of the loss concerning every specific network weight
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/executing-backpropagation-to-compute-the-precise-gradient-of-the-loss-concerning.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T013` Updating weights iteratively downward utilizing standard Gradient Descent scaled by a set learning rate
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/updating-weights-iteratively-downward-utilizing-standard-gradient-descent-scaled.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T014` Monitoring both test accuracy and training loss consistently across multiple dataset passes epochs
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/monitoring-both-test-accuracy-and-training-loss-consistently-across-multiple-dat.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T015` Accelerating processing speeds and adding regularizing noise by employing Stochastic Gradient Descent SGD
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/accelerating-processing-speeds-and-adding-regularizing-noise-by-employing-stocha.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T016` Evaluating how adjusting mini-batch sizes directly impacts hardware memory limits versus gradient accuracy
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/evaluating-how-adjusting-mini-batch-sizes-directly-impacts-hardware-memory-limit.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T017` Smoothing optimization paths through irregular loss landscapes by applying physical Momentum to updates
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/smoothing-optimization-paths-through-irregular-loss-landscapes-by-applying-physi.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T018` Adapting individual parameter learning rates based on accumulated squared gradients using AdaGrad
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/adapting-individual-parameter-learning-rates-based-on-accumulated-squared-gradie.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T019` Overcoming AdaGrad's diminishing learning rate flaw by implementing RMSprop's exponential moving average
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/overcoming-adagrads-diminishing-learning-rate-flaw-by-implementing-rmsprops-expo.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T020` Combining Momentum stability and RMSprop adaptability into the Adam optimizer
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-16-training-neural-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T021` Mitigating noisy gradients and managing sparse data effectively through Adam's first and second moment estimates
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/mitigating-noisy-gradients-and-managing-sparse-data-effectively-through-adams-fi.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T022` Preventing training overshoots near the end of runs by utilizing Step, Exponential, or Cosine Annealing learning rate schedules
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-16-training-neural-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T023` Deconstructing overall predictive error mathematically into High Bias underfitting and High Variance overfitting
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/deconstructing-overall-predictive-error-mathematically-into-high-bias-underfitti.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T024` Recognizing the irreducible error baseline caused exclusively by inherent measurement noise
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/recognizing-the-irreducible-error-baseline-caused-exclusively-by-inherent-measur.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T025` Preventing overfitting proactively by monitoring validation loss curves to implement Early Stopping
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/preventing-overfitting-proactively-by-monitoring-validation-loss-curves-to-imple.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T026` Inducing aggressive model sparsity by zeroing out non-essential weights utilizing L1 Regularization Lasso
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-16-training-neural-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T027` Shrinking weight magnitudes uniformly to spread influence safely utilizing L2 Regularization Ridge
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-16-training-neural-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T028` Decoupling weight decay mechanics directly from momentum accumulation calculations by employing the AdamW optimizer
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/decoupling-weight-decay-mechanics-directly-from-momentum-accumulation-calculatio.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T029` Forcing networks to learn distributed redundant feature representations by applying Dropout regularization
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-16-training-neural-networks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T030` Standardizing layer input distributions locally within mini-batches via Batch Normalization to prevent gradient explosions
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/standardizing-layer-input-distributions-locally-within-mini-batches-via-batch-no.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T031` Smoothing out the complex loss landscape physically to enable much higher stable learning rates
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/smoothing-out-the-complex-loss-landscape-physically-to-enable-much-higher-stable.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L16_T032` Understanding that loss may continue decreasing while accuracy plateaus due to increasing model overconfidence
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/understanding-that-loss-may-continue-decreasing-while-accuracy-plateaus-due-to-i.md`
+  - Status: `seed`; verified: `false`
+
+### [[lecture-17-genetics-disease-gwas-prs-mechanism|Lecture 17 - Genetics, Disease, GWAS, PRS, Mechanism]]
+- Source: `Raw/Sources/lecture_17_genetics_disease_gwas_prs_mechanism.md`
+- Backlog count: 34
+
+- [ ] `L17_T001` Human Genetic Variation: SNPs, Indels, STRs, CNVs
+  - Type: `comparison`
+  - Suggested page: `Wiki/Comparisons/human-genetic-variation-snps-indels-strs-cnvs.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T002` Genome-Wide Association Studies [[gwas|GWAS]] and Haplotype Blocks
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/genome-wide-association-studies-gwas-and-haplotype-blocks.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T003` Common vs. Rare Variants: Linkage Analysis vs. [[gwas|GWAS]]
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/common-vs-rare-variants-linkage-analysis-vs-gwas.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T004` Polygenic Risk Scores PRS and Ancestry Fine-Mapping
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/polygenic-risk-scores-prs-and-ancestry-fine-mapping.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T005` Manipulating genomes historically long before modern science via selective agricultural and animal breeding
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-17-genetics-disease-gwas-prs-mechanism.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T006` Establishing the foundation of discrete Mendelian genetics through dominant and recessive trait inheritance
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-17-genetics-disease-gwas-prs-mechanism.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T007` Scanning entire genomes systematically via [[gwas|GWAS]] to find unbiased statistical disease trait associations
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/scanning-entire-genomes-systematically-via-gwas-to-find-unbiased-statistical-dis.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T008` Classifying genetic variation: Single Nucleotide Polymorphisms SNPs substituting a single base
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-17-genetics-disease-gwas-prs-mechanism.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T009` Identifying structural disruptions caused by insertions, deletions Indels, and Short Tandem Repeats STRs
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/identifying-structural-disruptions-caused-by-insertions-deletions-indels-and-sho.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T010` Altering global gene dosage drastically via large-scale Copy Number Variants CNVs and structural variants
+  - Type: `comparison`
+  - Suggested page: `Wiki/Comparisons/altering-global-gene-dosage-drastically-via-large-scale-copy-number-variants-cnv.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T011` Recognizing pleiotropy: the sickle cell mutation causing severe anemia while providing malaria protection
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/recognizing-pleiotropy-the-sickle-cell-mutation-causing-severe-anemia-while-prov.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T012` Categorizing variant prevalence: Common over 5 percent, Low-Frequency, Rare, and private De Novo mutations
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-17-genetics-disease-gwas-prs-mechanism.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T013` Identifying Ancestral vs. Derived alleles by comparing human sequences to chimpanzee relatives
+  - Type: `comparison`
+  - Suggested page: `Wiki/Comparisons/identifying-ancestral-vs-derived-alleles-by-comparing-human-sequences-to-chimpan.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T014` Executing fast high-throughput targeted genotyping by hybridizing [[dna|DNA]] to specific commercial SNP arrays
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-17-genetics-disease-gwas-prs-mechanism.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T015` Co-inheriting adjacent variants tightly together in distinct Haplotype blocks bounded by recombination hotspots
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-17-genetics-disease-gwas-prs-mechanism.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T016` Visualizing [[gwas|GWAS]] statistical peaks across all 23 chromosomes simultaneously using Manhattan plots
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/visualizing-gwas-statistical-peaks-across-all-23-chromosomes-simultaneously-usin.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T017` Filtering out mass false positives by applying the strict multiple hypothesis correction threshold p < 5e-8
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-17-genetics-disease-gwas-prs-mechanism.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T018` Controlling critical [[gwas|GWAS]] confounders including population structure, relatedness, and sex biases
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/controlling-critical-gwas-confounders-including-population-structure-relatedness.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T019` Contrasting common weak-effect variants found in [[gwas|GWAS]] with rare strong-effect variants analyzed via Linkage
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/contrasting-common-weak-effect-variants-found-in-gwas-with-rare-strong-effect-va.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T020` Identifying evolutionary exceptions like APOE Îµ4 that maintain high population frequencies despite severe effects
+  - Type: `named_entity`
+  - Suggested page: `Wiki/Entities/identifying-evolutionary-exceptions-like-apoe-4-that-maintain-high-population-fr.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T021` Mapping rare high-impact Mendelian diseases by tracing shared inheritance patterns in family Linkage Analysis
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-17-genetics-disease-gwas-prs-mechanism.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T022` Highlighting statistical difficulty in detecting protective variants due to the requirement for massive sample sizes
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/highlighting-statistical-difficulty-in-detecting-protective-variants-due-to-the.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T023` Decomposing individual chromosomal segments to specific geographic origins using ancestry painting algorithms
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-17-genetics-disease-gwas-prs-mechanism.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T024` Stratifying global genetic variance along distinct continental and regional axes utilizing PCA
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/stratifying-global-genetic-variance-along-distinct-continental-and-regional-axes.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T025` Leveraging varied LD block structures across different global populations to execute multi-ethnic fine-mapping
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-17-genetics-disease-gwas-prs-mechanism.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T026` Aggregating hundreds of weak-effect variants simultaneously into a single predictive Polygenic Risk Score PRS
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/aggregating-hundreds-of-weak-effect-variants-simultaneously-into-a-single-predic.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T027` Outperforming traditional single-factor metrics in clinical predictions using cumulative PRS calculations
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/outperforming-traditional-single-factor-metrics-in-clinical-predictions-using-cu.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T028` Refining general family history risk by analyzing exact 50 percent randomized variation between full siblings
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-17-genetics-disease-gwas-prs-mechanism.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T029` Linking global disease traits systematically to specific tissue enhancers via genome-wide functional enrichments
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/linking-global-disease-traits-systematically-to-specific-tissue-enhancers-via-ge.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T030` Mapping the strong FTO obesity variants specifically to non-coding distal regulatory [[enhancer]] elements
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/mapping-the-strong-fto-obesity-variants-specifically-to-non-coding-distal-regula.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T031` Revealing unexpected biological mechanisms such as linking Alzheimerâ€™s [[gwas|GWAS]] signals to immune cell enhancers
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/revealing-unexpected-biological-mechanisms-such-as-linking-alzheimer-s-gwas-sign.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T032` Categorizing complex traits mathematically as Unifactorial, Polyfactorial, or highly distributed Multifactorial
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/categorizing-complex-traits-mathematically-as-unifactorial-polyfactorial-or-high.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T033` Defining central core pathway versus diffuse peripheral background genetic effects in trait architectures
+  - Type: `comparison`
+  - Suggested page: `Wiki/Comparisons/defining-central-core-pathway-versus-diffuse-peripheral-background-genetic-effec.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L17_T034` Proposing the Omnigenic inheritance model: nearly the entire interconnected gene network impacts complex traits
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-17-genetics-disease-gwas-prs-mechanism.md`
+  - Status: `seed`; verified: `false`
+
+### [[lecture-18-disease-mechanism-circuitry-eqtls-heritability|Lecture 18 - Disease Mechanism, Circuitry, eQTLs, Heritability]]
+- Source: `Raw/Sources/lecture_18_disease_mechanism_circuitry_eqtls_heritability.md`
+- Backlog count: 35
+
+- [ ] `L18_T001` Quantitative Trait Loci: [[eqtl|eQTLs]], mQTLs
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-18-disease-mechanism-circuitry-eqtls-heritability.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T002` Causality Testing: Mediation Analysis, Mendelian Randomization
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/causality-testing-mediation-analysis-mendelian-randomization.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T003` Heritability: Narrow-sense vs Broad-sense, Tissue-specific partitioning
+  - Type: `comparison`
+  - Suggested page: `Wiki/Comparisons/heritability-narrow-sense-vs-broad-sense-tissue-specific-partitioning.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T004` Genetic Architecture Models: Monogenic, Polygenic, Omnigenic
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-18-disease-mechanism-circuitry-eqtls-heritability.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T005` Case Study: The FTO Locus and Obesity
+  - Type: `named_entity`
+  - Suggested page: `Wiki/Entities/case-study-the-fto-locus-and-obesity.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T006` Transitioning beyond high-level [[gwas|GWAS]] statistics to elucidate specific molecular functional mechanisms
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/transitioning-beyond-high-level-gwas-statistics-to-elucidate-specific-molecular.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T007` Linking exact genetic variants directly to downstream gene expression shifts via [[eqtl|eQTLs]]
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-18-disease-mechanism-circuitry-eqtls-heritability.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T008` Linking exact genetic variants directly to specific [[dna|DNA]] methylation modifications via meQTLs
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-18-disease-mechanism-circuitry-eqtls-heritability.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T009` Establishing strict unidirectional causality: inherited genotype alters molecular phenotypes, never vice versa
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-18-disease-mechanism-circuitry-eqtls-heritability.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T010` Demonstrating that the vast majority of regulatory effects act locally in cis such as 90 percent of mQTLs within 75 KB
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/demonstrating-that-the-vast-majority-of-regulatory-effects-act-locally-in-cis-su.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T011` Determining if an intermediate molecular trait fully carries a genetic effect by applying Mediation Analysis
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-18-disease-mechanism-circuitry-eqtls-heritability.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T012` Bypassing unmeasured confounding biases using SNPs as instrumental variables in Mendelian Randomization
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/bypassing-unmeasured-confounding-biases-using-snps-as-instrumental-variables-in.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T013` Distinguishing true mediated causal effects scientifically from simple confounded associations
+  - Type: `comparison`
+  - Suggested page: `Wiki/Comparisons/distinguishing-true-mediated-causal-effects-scientifically-from-simple-confounde.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T014` Defining Narrow-sense purely additive versus Broad-sense including dominance and epistasis Heritability
+  - Type: `comparison`
+  - Suggested page: `Wiki/Comparisons/defining-narrow-sense-purely-additive-versus-broad-sense-including-dominance-and.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T015` Calculating heritability mathematically by comparing identical monozygotic to fraternal dizygotic twin correlations
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/calculating-heritability-mathematically-by-comparing-identical-monozygotic-to-fr.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T016` Estimating heritability efficiently from populations of unrelated individuals using Genome-Wide Complex Trait Analysis GCTA
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-18-disease-mechanism-circuitry-eqtls-heritability.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T017` Recognizing how homogeneous versus heterogeneous environmental factors impact final heritability estimates
+  - Type: `comparison`
+  - Suggested page: `Wiki/Comparisons/recognizing-how-homogeneous-versus-heterogeneous-environmental-factors-impact-fi.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T018` Partitioning overall heritability accurately by specific functional annotations such as cell-type specific enhancers
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-18-disease-mechanism-circuitry-eqtls-heritability.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T019` Decomposing highly multifactorial traits like Coronary Artery Disease into liver, heart, and adipose genetic components
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-18-disease-mechanism-circuitry-eqtls-heritability.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T020` Building a complete integrative framework combining SNPs, Epigenomics, Motifs, Hi-C loops, and [[eqtl|eQTLs]]
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-18-disease-mechanism-circuitry-eqtls-heritability.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T021` Rescuing non-significant sub-threshold [[gwas|GWAS]] regions computationally by prioritizing them via machine learning and epigenomic priors
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/rescuing-non-significant-sub-threshold-gwas-regions-computationally-by-prioritiz.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T022` Validating prioritized genetic loci rigorously in the lab via CRISPR knockouts and Luciferase reporter assays
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-18-disease-mechanism-circuitry-eqtls-heritability.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T023` Developing centralized public resources like HaploReg and eQTL Mapping Projects ePAP to annotate loci
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-18-disease-mechanism-circuitry-eqtls-heritability.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T024` Analyzing the FTO locus: the strongest statistical genetic association discovered for human obesity
+  - Type: `named_entity`
+  - Suggested page: `Wiki/Entities/analyzing-the-fto-locus-the-strongest-statistical-genetic-association-discovered.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T025` Determining that the FTO risk allele operates functionally as a powerful gain-of-function [[enhancer]] variant
+  - Type: `named_entity`
+  - Suggested page: `Wiki/Entities/determining-that-the-fto-risk-allele-operates-functionally-as-a-powerful-gain-of.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T026` Identifying that the FTO [[enhancer]] exhibits maximum activity within adipocyte mesenchymal stem cells
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/identifying-that-the-fto-enhancer-exhibits-maximum-activity-within-adipocyte-mes.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T027` Bypassing the nearby FTO gene and linking the [[enhancer]] over large distances to IRX3 and IRX5 using Promoter Capture Hi-C
+  - Type: `named_entity`
+  - Suggested page: `Wiki/Entities/bypassing-the-nearby-fto-gene-and-linking-the-enhancer-over-large-distances-to-i.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T028` Isolating the causal mechanism: the FTO risk SNP rs1421085 disrupts the ARID5B repressor motif
+  - Type: `named_entity`
+  - Suggested page: `Wiki/Entities/isolating-the-causal-mechanism-the-fto-risk-snp-rs1421085-disrupts-the-arid5b-re.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T029` Proving dependency on ARID5B for normal [[enhancer]] repression through targeted epistasis experiments
+  - Type: `named_entity`
+  - Suggested page: `Wiki/Entities/proving-dependency-on-arid5b-for-normal-enhancer-repression-through-targeted-epi.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T030` Discovering via co-expression analysis that elevated IRX3/5 negatively correlates with mitochondrial genes
+  - Type: `named_entity`
+  - Suggested page: `Wiki/Entities/discovering-via-co-expression-analysis-that-elevated-irx3-5-negatively-correlate.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T031` Shifting adipocyte differentiation from calorie-burning beige cells to calorie-storing white fat cells
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-18-disease-mechanism-circuitry-eqtls-heritability.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T032` Decreasing UCP1 expression leading to loss of non-shivering thermogenesis
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/decreasing-ucp1-expression-leading-to-loss-of-non-shivering-thermogenesis.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T033` Demonstrating in vivo that transgenic mice expressing dominant-negative IRX3 are protected against diet-induced weight gain
+  - Type: `ml_method`
+  - Suggested page: `Wiki/Methods/demonstrating-in-vivo-that-transgenic-mice-expressing-dominant-negative-irx3-are.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T034` Rescuing the lean phenotype in mice by executing a single-base CRISPR genome edit reverting C back to T
+  - Type: `lecture_topic`
+  - Suggested page: `Wiki/Topics/Lectures/lecture-18-disease-mechanism-circuitry-eqtls-heritability.md`
+  - Status: `seed`; verified: `false`
+- [ ] `L18_T035` Calculating posterior probabilities to prioritize true causal variants using Bayesian fine-mapping techniques
+  - Type: `equation_or_statistical_concept`
+  - Suggested page: `Wiki/Equations/calculating-posterior-probabilities-to-prioritize-true-causal-variants-using-bay.md`
+  - Status: `seed`; verified: `false`
+
+## Processing Rules for Future Batches
+
+- Verify each topic against its matching `Raw/Sources/` lecture before adding factual claims to compiled Wiki notes.
+- If evidence is not found, mark the topic `needs_source` instead of writing it as a fact.
+- Keep graph links active by connecting lecture pages, methods, concepts, entities, equations, comparisons, maps, and projects with Obsidian wikilinks.
+- Do not modify raw transcripts.

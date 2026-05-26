@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MLCB Knowledge Graph Schema",
+  "description": "Schema for the typed, source-grounded knowledge graph for MIT MLCB Fall 2024",
+  "version": "1.0.0",
+  "generated": "2026-05-25",
+
+  "node": {
+    "type": "object",
+    "required": ["id", "type", "label", "description", "sources"],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9-]*$",
+        "description": "Kebab-case stable identifier. Never reused after deletion."
+      },
+      "type": {
+        "type": "string",
+        "enum": ["concept", "method", "model", "biological_entity", "data_type", "application", "tool", "lecture", "topic", "person", "equation"],
+        "description": "Entity type from entity_ontology.yaml"
+      },
+      "label": {
+        "type": "string",
+        "description": "Human-readable display name."
+      },
+      "aliases": {
+        "type": "array",
+        "items": {"type": "string"},
+        "description": "Alternate names, abbreviations, or synonyms."
+      },
+      "description": {
+        "type": "string",
+        "description": "1-3 sentence factual description. No hedging. Source-grounded."
+      },
+      "sources": {
+        "type": "array",
+        "items": {"type": "string"},
+        "description": "Raw/Sources/ paths that support this node's description."
+      },
+      "lectures": {
+        "type": "array",
+        "items": {"type": "integer", "minimum": 1, "maximum": 18},
+        "description": "Lecture numbers where this entity is introduced or discussed."
+      },
+      "wiki_page": {
+        "type": "string",
+        "description": "Relative path to compiled Wiki note for this entity."
+      },
+      "cluster": {
+        "type": "string",
+        "description": "Thematic cluster ID from cluster_map.json"
+      },
+      "importance": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1,
+        "description": "Normalized importance score (0-1) for retrieval ranking."
+      }
+    }
+  },
+
+  "edge": {
+    "type": "object",
+    "required": ["source", "target", "relation", "sources"],
+    "properties": {
+      "source": {
+        "type": "string",
+        "description": "Source node id"
+      },
+      "target": {
+        "type": "string",
+        "description": "Target node id"
+      },
+      "relation": {
+        "type": "string",
+        "enum": ["IS_A", "HAS_PART", "USES", "APPLIED_TO", "PRODUCES", "ENABLES", "TAUGHT_IN", "EXTENDS", "CONTRASTS_WITH", "RELATED_TO", "BASED_ON", "LEARNS_FROM", "REPRESENTED_BY", "MEMBER_OF", "DISCOVERED_BY", "PRECEDED_BY"],
+        "description": "Relationship type from relationship_ontology.yaml"
+      },
+      "label": {
+        "type": "string",
+        "description": "Optional human-readable edge label."
+      },
+      "sources": {
+        "type": "array",
+        "items": {"type": "string"},
+        "description": "Raw/Sources/ paths that support this edge."
+      },
+      "weight": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1,
+        "description": "Edge confidence/strength score."
+      }
+    }
+  },
+
+  "graph": {
+    "type": "object",
+    "required": ["nodes", "edges", "metadata"],
+    "properties": {
+      "metadata": {
+        "type": "object",
+        "properties": {
+          "title": {"type": "string"},
+          "course": {"type": "string"},
+          "version": {"type": "string"},
+          "generated": {"type": "string"},
+          "node_count": {"type": "integer"},
+          "edge_count": {"type": "integer"}
+        }
+      },
+      "nodes": {
+        "type": "array",
+        "items": {"$ref": "#/node"}
+      },
+      "edges": {
+        "type": "array",
+        "items": {"$ref": "#/edge"}
+      }
+    }
+  }
+}

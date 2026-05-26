@@ -1,0 +1,1041 @@
+{
+  "_meta": {
+    "description": "Fast lookup map: entity id → {label, type, importance, lectures, wiki_page}. Used by query_wiki.py for entity resolution.",
+    "generated": "2026-05-25",
+    "source": "retrieval/knowledge_graph.json",
+    "updated": "2026-05-25",
+    "phases_applied": [
+      "phase-2-deduplication",
+      "phase-3-extraction",
+      "phase-5-maps"
+    ]
+  },
+  "representation-learning": {
+    "label": "Representation Learning",
+    "type": "concept",
+    "importance": 0.95,
+    "lectures": [
+      1,
+      2,
+      3,
+      10,
+      11,
+      12
+    ],
+    "wiki_page": "Wiki/Concepts/representation-learning.md"
+  },
+  "latent-space": {
+    "label": "Latent Space",
+    "type": "concept",
+    "importance": 0.85,
+    "lectures": [
+      1,
+      2,
+      11,
+      15
+    ],
+    "wiki_page": "Wiki/Concepts/latent-space.md"
+  },
+  "self-supervised-learning": {
+    "label": "Self-Supervised Learning",
+    "type": "concept",
+    "importance": 0.88,
+    "lectures": [
+      1,
+      11,
+      12
+    ],
+    "wiki_page": "Wiki/Concepts/self-supervised-learning.md"
+  },
+  "multimodal-foundation-models": {
+    "label": "Multimodal Foundation Models",
+    "type": "concept",
+    "importance": 0.72,
+    "lectures": [
+      1
+    ],
+    "wiki_page": "Wiki/Concepts/multimodal-foundation-models.md"
+  },
+  "data-driven-paradigm": {
+    "label": "Data-Driven Paradigm",
+    "type": "concept",
+    "importance": 0.7,
+    "lectures": [
+      1
+    ],
+    "wiki_page": "Wiki/Comparisons/data-driven-vs-hypothesis-driven-paradigms.md"
+  },
+  "hypothesis-driven-paradigm": {
+    "label": "Hypothesis-Driven Paradigm",
+    "type": "concept",
+    "importance": 0.68,
+    "lectures": [
+      1
+    ],
+    "wiki_page": "Wiki/Comparisons/data-driven-vs-hypothesis-driven-paradigms.md"
+  },
+  "graph-neural-network": {
+    "label": "Graph Neural Network",
+    "type": "method",
+    "importance": 0.9,
+    "lectures": [
+      1,
+      14
+    ],
+    "wiki_page": "Wiki/Methods/graph-neural-networks.md"
+  },
+  "large-language-model": {
+    "label": "Large Language Model",
+    "type": "concept",
+    "importance": 0.85,
+    "lectures": [
+      1,
+      11,
+      12
+    ]
+  },
+  "gibbs-sampling": {
+    "label": "Gibbs Sampling",
+    "type": "method",
+    "importance": 0.68,
+    "lectures": [
+      1,
+      6
+    ]
+  },
+  "expectation-maximization": {
+    "label": "Expectation-Maximization",
+    "type": "method",
+    "importance": 0.82,
+    "lectures": [
+      1,
+      2,
+      5
+    ],
+    "wiki_page": "Wiki/Methods/expectation-maximization.md"
+  },
+  "gene-expression-matrix": {
+    "label": "Gene Expression Matrix",
+    "type": "data_type",
+    "importance": 0.8,
+    "lectures": [
+      2,
+      3
+    ]
+  },
+  "rna-seq": {
+    "label": "RNA-seq",
+    "type": "data_type",
+    "importance": 0.75,
+    "lectures": [
+      2
+    ]
+  },
+  "k-means-clustering": {
+    "label": "K-Means Clustering",
+    "type": "method",
+    "importance": 0.78,
+    "lectures": [
+      2
+    ],
+    "wiki_page": "Wiki/Methods/k-means-clustering.md"
+  },
+  "gaussian-mixture-model": {
+    "label": "Gaussian Mixture Model",
+    "type": "method",
+    "importance": 0.76,
+    "lectures": [
+      2
+    ],
+    "wiki_page": "Wiki/Methods/gaussian-mixture-models.md"
+  },
+  "pca": {
+    "label": "Principal Component Analysis",
+    "type": "method",
+    "importance": 0.78,
+    "lectures": [
+      2,
+      3
+    ]
+  },
+  "umap": {
+    "label": "UMAP",
+    "type": "method",
+    "importance": 0.78,
+    "lectures": [
+      2,
+      3
+    ]
+  },
+  "t-sne": {
+    "label": "t-SNE",
+    "type": "method",
+    "importance": 0.7,
+    "lectures": [
+      2
+    ]
+  },
+  "scrna-seq": {
+    "label": "scRNA-seq",
+    "type": "data_type",
+    "importance": 0.85,
+    "lectures": [
+      3
+    ]
+  },
+  "cell-type-annotation": {
+    "label": "Cell Type Annotation",
+    "type": "application",
+    "importance": 0.72,
+    "lectures": [
+      3
+    ]
+  },
+  "trajectory-inference": {
+    "label": "Trajectory Inference",
+    "type": "method",
+    "importance": 0.73,
+    "lectures": [
+      3
+    ]
+  },
+  "scanpy": {
+    "label": "Scanpy",
+    "type": "tool",
+    "importance": 0.68,
+    "lectures": [
+      3
+    ]
+  },
+  "sequence-alignment": {
+    "label": "Sequence Alignment",
+    "type": "method",
+    "importance": 0.82,
+    "lectures": [
+      4
+    ],
+    "wiki_page": "Wiki/Methods/dynamic-programming-alignment.md"
+  },
+  "dynamic-programming": {
+    "label": "Dynamic Programming",
+    "type": "method",
+    "importance": 0.78,
+    "lectures": [
+      4,
+      5
+    ],
+    "wiki_page": "Wiki/Methods/dynamic-programming-alignment.md"
+  },
+  "blast": {
+    "label": "BLAST",
+    "type": "tool",
+    "importance": 0.78,
+    "lectures": [
+      4
+    ],
+    "wiki_page": "Wiki/Methods/blast.md"
+  },
+  "scoring-matrix": {
+    "label": "Scoring Matrix",
+    "type": "concept",
+    "importance": 0.7,
+    "lectures": [
+      4
+    ]
+  },
+  "motif-finding": {
+    "label": "Motif Finding",
+    "type": "method",
+    "importance": 0.75,
+    "lectures": [
+      4,
+      6
+    ]
+  },
+  "meme": {
+    "label": "MEME",
+    "type": "tool",
+    "importance": 0.68,
+    "lectures": [
+      4,
+      6
+    ]
+  },
+  "hidden-markov-model": {
+    "label": "Hidden Markov Model",
+    "type": "method",
+    "importance": 0.85,
+    "lectures": [
+      5
+    ],
+    "wiki_page": "Wiki/Methods/hidden-markov-models.md"
+  },
+  "viterbi-algorithm": {
+    "label": "Viterbi Algorithm",
+    "type": "method",
+    "importance": 0.78,
+    "lectures": [
+      5
+    ],
+    "wiki_page": "Wiki/Methods/viterbi-algorithm.md"
+  },
+  "baum-welch": {
+    "label": "Baum-Welch Algorithm",
+    "type": "method",
+    "importance": 0.73,
+    "lectures": [
+      5
+    ]
+  },
+  "chromatin": {
+    "label": "Chromatin",
+    "type": "biological_entity",
+    "importance": 0.8,
+    "lectures": [
+      5,
+      6
+    ],
+    "wiki_page": "Wiki/Entities/chromatin.md"
+  },
+  "chip-seq": {
+    "label": "ChIP-seq",
+    "type": "data_type",
+    "importance": 0.78,
+    "lectures": [
+      5,
+      6
+    ]
+  },
+  "atac-seq": {
+    "label": "ATAC-seq",
+    "type": "data_type",
+    "importance": 0.76,
+    "lectures": [
+      5,
+      6
+    ]
+  },
+  "histone-modification": {
+    "label": "Histone Modification",
+    "type": "biological_entity",
+    "importance": 0.8,
+    "lectures": [
+      5
+    ]
+  },
+  "chromhmm": {
+    "label": "ChromHMM",
+    "type": "tool",
+    "importance": 0.72,
+    "lectures": [
+      5
+    ]
+  },
+  "dna-methylation": {
+    "label": "DNA Methylation",
+    "type": "biological_entity",
+    "importance": 0.72,
+    "lectures": [
+      5
+    ]
+  },
+  "transcription-factor": {
+    "label": "Transcription Factor",
+    "type": "biological_entity",
+    "importance": 0.85,
+    "lectures": [
+      6,
+      7
+    ],
+    "wiki_page": "Wiki/Entities/transcription-factor.md"
+  },
+  "enhancer": {
+    "label": "Enhancer",
+    "type": "biological_entity",
+    "importance": 0.8,
+    "lectures": [
+      6
+    ],
+    "wiki_page": "Wiki/Entities/enhancer.md"
+  },
+  "promoter": {
+    "label": "Promoter",
+    "type": "biological_entity",
+    "importance": 0.78,
+    "lectures": [
+      6
+    ]
+  },
+  "gene-regulatory-network": {
+    "label": "Gene Regulatory Network",
+    "type": "concept",
+    "importance": 0.82,
+    "lectures": [
+      7
+    ]
+  },
+  "network-inference": {
+    "label": "Network Inference",
+    "type": "method",
+    "importance": 0.75,
+    "lectures": [
+      7
+    ]
+  },
+  "network-motif": {
+    "label": "Network Motif",
+    "type": "concept",
+    "importance": 0.72,
+    "lectures": [
+      7
+    ]
+  },
+  "protein-structure": {
+    "label": "Protein Structure",
+    "type": "concept",
+    "importance": 0.88,
+    "lectures": [
+      8,
+      9,
+      10
+    ],
+    "wiki_page": "Wiki/Concepts/protein-structure-and-biological-language-models.md"
+  },
+  "alpha-helix": {
+    "label": "Alpha Helix",
+    "type": "biological_entity",
+    "importance": 0.68,
+    "lectures": [
+      8
+    ]
+  },
+  "beta-sheet": {
+    "label": "Beta Sheet",
+    "type": "biological_entity",
+    "importance": 0.68,
+    "lectures": [
+      8
+    ]
+  },
+  "contact-map": {
+    "label": "Protein Contact Map",
+    "type": "data_type",
+    "importance": 0.75,
+    "lectures": [
+      8,
+      9
+    ]
+  },
+  "multiple-sequence-alignment": {
+    "label": "Multiple Sequence Alignment",
+    "type": "data_type",
+    "importance": 0.82,
+    "lectures": [
+      9,
+      10
+    ]
+  },
+  "coevolution-analysis": {
+    "label": "Coevolution Analysis",
+    "type": "method",
+    "importance": 0.73,
+    "lectures": [
+      9
+    ]
+  },
+  "alphafold2": {
+    "label": "AlphaFold2",
+    "type": "model",
+    "importance": 0.95,
+    "lectures": [
+      10
+    ],
+    "wiki_page": "Wiki/Entities/alphafold.md"
+  },
+  "evoformer": {
+    "label": "Evoformer",
+    "type": "model",
+    "importance": 0.85,
+    "lectures": [
+      10
+    ]
+  },
+  "attention-mechanism": {
+    "label": "Attention Mechanism",
+    "type": "method",
+    "importance": 0.9,
+    "lectures": [
+      10,
+      11,
+      12
+    ],
+    "wiki_page": "Wiki/Methods/attention-mechanism.md"
+  },
+  "lddt-score": {
+    "label": "lDDT Score",
+    "type": "concept",
+    "importance": 0.73,
+    "lectures": [
+      10
+    ]
+  },
+  "esm2": {
+    "label": "ESM-2",
+    "type": "model",
+    "importance": 0.9,
+    "lectures": [
+      11
+    ]
+  },
+  "masked-language-modeling": {
+    "label": "Masked Language Modeling",
+    "type": "method",
+    "importance": 0.85,
+    "lectures": [
+      11,
+      12
+    ]
+  },
+  "zero-shot-fitness-prediction": {
+    "label": "Zero-Shot Fitness Prediction",
+    "type": "application",
+    "importance": 0.78,
+    "lectures": [
+      11
+    ]
+  },
+  "protein-sequence": {
+    "label": "Protein Sequence",
+    "type": "data_type",
+    "importance": 0.8,
+    "lectures": [
+      11
+    ]
+  },
+  "dnabert": {
+    "label": "DNABERT",
+    "type": "model",
+    "importance": 0.82,
+    "lectures": [
+      12
+    ]
+  },
+  "nucleotide-transformer": {
+    "label": "Nucleotide Transformer",
+    "type": "model",
+    "importance": 0.78,
+    "lectures": [
+      12
+    ]
+  },
+  "hyena": {
+    "label": "HyenaDNA",
+    "type": "model",
+    "importance": 0.75,
+    "lectures": [
+      12
+    ]
+  },
+  "caduceus": {
+    "label": "Caduceus",
+    "type": "model",
+    "importance": 0.72,
+    "lectures": [
+      12
+    ]
+  },
+  "dna-sequence": {
+    "label": "DNA Sequence",
+    "type": "data_type",
+    "importance": 0.82,
+    "lectures": [
+      4,
+      5,
+      12
+    ]
+  },
+  "drug-discovery": {
+    "label": "Drug Discovery",
+    "type": "application",
+    "importance": 0.9,
+    "lectures": [
+      13,
+      14,
+      15
+    ],
+    "wiki_page": "Wiki/Concepts/drug-discovery-and-molecular-generation.md"
+  },
+  "admet": {
+    "label": "ADMET",
+    "type": "concept",
+    "importance": 0.78,
+    "lectures": [
+      13
+    ]
+  },
+  "virtual-screening": {
+    "label": "Virtual Screening",
+    "type": "method",
+    "importance": 0.75,
+    "lectures": [
+      13
+    ]
+  },
+  "smiles": {
+    "label": "SMILES",
+    "type": "data_type",
+    "importance": 0.82,
+    "lectures": [
+      14
+    ]
+  },
+  "selfies": {
+    "label": "SELFIES",
+    "type": "data_type",
+    "importance": 0.75,
+    "lectures": [
+      14
+    ]
+  },
+  "molecular-graph": {
+    "label": "Molecular Graph",
+    "type": "data_type",
+    "importance": 0.85,
+    "lectures": [
+      14
+    ]
+  },
+  "message-passing-neural-network": {
+    "label": "Message Passing Neural Network",
+    "type": "method",
+    "importance": 0.85,
+    "lectures": [
+      14
+    ]
+  },
+  "schnet": {
+    "label": "SchNet",
+    "type": "model",
+    "importance": 0.68,
+    "lectures": [
+      14
+    ]
+  },
+  "variational-autoencoder": {
+    "label": "Variational Autoencoder",
+    "type": "method",
+    "importance": 0.85,
+    "lectures": [
+      15
+    ],
+    "wiki_page": "Wiki/Methods/variational-autoencoders.md"
+  },
+  "diffusion-model": {
+    "label": "Diffusion Model",
+    "type": "method",
+    "importance": 0.82,
+    "lectures": [
+      15
+    ]
+  },
+  "normalizing-flow": {
+    "label": "Normalizing Flow",
+    "type": "method",
+    "importance": 0.72,
+    "lectures": [
+      15
+    ]
+  },
+  "reinforcement-learning-drug": {
+    "label": "RL for Drug Design",
+    "type": "method",
+    "importance": 0.75,
+    "lectures": [
+      15
+    ]
+  },
+  "backpropagation": {
+    "label": "Backpropagation",
+    "type": "method",
+    "importance": 0.82,
+    "lectures": [
+      16
+    ],
+    "wiki_page": "Wiki/Methods/neural-network-training.md"
+  },
+  "batch-normalization": {
+    "label": "Batch Normalization",
+    "type": "method",
+    "importance": 0.75,
+    "lectures": [
+      16
+    ]
+  },
+  "dropout": {
+    "label": "Dropout",
+    "type": "method",
+    "importance": 0.73,
+    "lectures": [
+      16
+    ]
+  },
+  "adam-optimizer": {
+    "label": "Adam Optimizer",
+    "type": "method",
+    "importance": 0.75,
+    "lectures": [
+      16
+    ]
+  },
+  "transfer-learning": {
+    "label": "Transfer Learning",
+    "type": "concept",
+    "importance": 0.85,
+    "lectures": [
+      11,
+      16
+    ]
+  },
+  "gwas": {
+    "label": "Genome-Wide Association Study",
+    "type": "method",
+    "importance": 0.92,
+    "lectures": [
+      17
+    ],
+    "wiki_page": "Wiki/Entities/gwas.md"
+  },
+  "snp": {
+    "label": "SNP",
+    "type": "biological_entity",
+    "importance": 0.85,
+    "lectures": [
+      17
+    ],
+    "wiki_page": "Wiki/Entities/snp.md"
+  },
+  "polygenic-risk-score": {
+    "label": "Polygenic Risk Score",
+    "type": "method",
+    "importance": 0.88,
+    "lectures": [
+      17
+    ]
+  },
+  "linkage-disequilibrium": {
+    "label": "Linkage Disequilibrium",
+    "type": "concept",
+    "importance": 0.8,
+    "lectures": [
+      17
+    ]
+  },
+  "eqtl": {
+    "label": "eQTL",
+    "type": "concept",
+    "importance": 0.85,
+    "lectures": [
+      17,
+      18
+    ],
+    "wiki_page": "Wiki/Entities/eqtl.md"
+  },
+  "heritability": {
+    "label": "Heritability",
+    "type": "concept",
+    "importance": 0.82,
+    "lectures": [
+      18
+    ],
+    "wiki_page": "Wiki/Entities/heritability.md"
+  },
+  "ld-score-regression": {
+    "label": "LD Score Regression",
+    "type": "method",
+    "importance": 0.78,
+    "lectures": [
+      18
+    ]
+  },
+  "colocalization": {
+    "label": "Colocalization Analysis",
+    "type": "method",
+    "importance": 0.78,
+    "lectures": [
+      18
+    ]
+  },
+  "fine-mapping": {
+    "label": "Fine-Mapping",
+    "type": "method",
+    "importance": 0.78,
+    "lectures": [
+      18
+    ]
+  },
+  "mendelian-randomization": {
+    "label": "Mendelian Randomization",
+    "type": "method",
+    "importance": 0.75,
+    "lectures": [
+      17
+    ]
+  },
+  "disease-circuitry": {
+    "label": "Disease Circuitry",
+    "type": "concept",
+    "importance": 0.82,
+    "lectures": [
+      6,
+      18
+    ]
+  },
+  "deep-learning": {
+    "label": "Deep Learning",
+    "type": "concept",
+    "importance": 0.9,
+    "lectures": [
+      1,
+      16
+    ]
+  },
+  "transformer": {
+    "label": "Transformer",
+    "type": "model",
+    "importance": 0.92,
+    "lectures": [
+      10,
+      11,
+      12
+    ],
+    "wiki_page": "Wiki/Entities/transformer.md"
+  },
+  "gene": {
+    "label": "Gene",
+    "type": "biological_entity",
+    "importance": 0.85,
+    "lectures": [
+      1,
+      2,
+      6,
+      7
+    ],
+    "wiki_page": "Wiki/Entities/gene.md"
+  },
+  "protein": {
+    "label": "Protein",
+    "type": "biological_entity",
+    "importance": 0.9,
+    "lectures": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "wiki_page": "Wiki/Entities/protein.md"
+  },
+  "dna": {
+    "label": "DNA",
+    "type": "biological_entity",
+    "importance": 0.88,
+    "lectures": [
+      1,
+      4,
+      5,
+      12,
+      17
+    ],
+    "wiki_page": "Wiki/Entities/dna.md"
+  },
+  "rna": {
+    "label": "RNA",
+    "type": "biological_entity",
+    "importance": 0.85,
+    "lectures": [
+      1,
+      2,
+      3
+    ],
+    "wiki_page": "Wiki/Entities/rna.md"
+  },
+  "small-molecule": {
+    "label": "Small Molecule",
+    "type": "biological_entity",
+    "importance": 0.85,
+    "lectures": [
+      13,
+      14,
+      15
+    ],
+    "wiki_page": "Wiki/Entities/molecule.md"
+  },
+  "drug-target": {
+    "label": "Drug Target",
+    "type": "biological_entity",
+    "importance": 0.8,
+    "lectures": [
+      13
+    ]
+  },
+  "molecular-docking": {
+    "label": "Molecular Docking",
+    "type": "method",
+    "importance": 0.75,
+    "lectures": [
+      13
+    ]
+  },
+  "elbo": {
+    "label": "ELBO",
+    "type": "equation",
+    "importance": 0.78,
+    "lectures": [
+      15
+    ]
+  },
+  "cross-entropy-loss": {
+    "label": "Cross-Entropy Loss",
+    "type": "equation",
+    "importance": 0.8,
+    "lectures": [
+      11,
+      16
+    ]
+  },
+  "manolis-kellis": {
+    "label": "Manolis Kellis",
+    "type": "person",
+    "importance": null,
+    "lectures": [
+      1,
+      5,
+      6,
+      7,
+      17,
+      18
+    ]
+  },
+  "eric-alm": {
+    "label": "Eric Alm",
+    "type": "person",
+    "importance": null,
+    "lectures": [
+      1
+    ]
+  },
+  "computational-biology": {
+    "label": "Computational Biology",
+    "type": "topic",
+    "importance": 0.98,
+    "lectures": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ]
+  },
+  "rosetta": {
+    "label": "Rosetta",
+    "type": "tool",
+    "importance": 0.72,
+    "lectures": [
+      9
+    ]
+  },
+  "alphafold1": {
+    "label": "AlphaFold (v1)",
+    "type": "model",
+    "importance": 0.72,
+    "lectures": [
+      9
+    ]
+  },
+  "casp": {
+    "label": "CASP",
+    "type": "concept",
+    "importance": 0.75,
+    "lectures": [
+      9,
+      10
+    ]
+  },
+  "dimenet": {
+    "label": "DimeNet",
+    "type": "model",
+    "importance": 0.68,
+    "lectures": [
+      14
+    ]
+  },
+  "encode": {
+    "label": "ENCODE",
+    "type": "tool",
+    "importance": 0.73,
+    "lectures": [
+      6
+    ]
+  },
+  "scenic": {
+    "label": "SCENIC",
+    "type": "tool",
+    "importance": 0.68,
+    "lectures": [
+      7
+    ]
+  },
+  "stochastic-gradient-descent": {
+    "label": "Stochastic Gradient Descent",
+    "type": "method",
+    "importance": 0.78,
+    "lectures": [
+      16
+    ]
+  },
+  "manhattan-plot": {
+    "label": "Manhattan Plot",
+    "type": "concept",
+    "importance": 0.68,
+    "lectures": [
+      17
+    ]
+  },
+  "cpg-island": {
+    "label": "CpG Island",
+    "type": "biological_entity",
+    "importance": 0.68,
+    "lectures": [
+      5
+    ]
+  },
+  "protein-design": {
+    "label": "Protein Design",
+    "type": "application",
+    "importance": 0.78,
+    "lectures": [
+      11
+    ]
+  },
+  "benchmarking": {
+    "label": "Benchmarking",
+    "type": "concept",
+    "importance": 0.7,
+    "lectures": [
+      9,
+      11
+    ]
+  }
+}
