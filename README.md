@@ -8,6 +8,14 @@ The project has three main parts:
 - `backend/`: a FastAPI RAG server that searches the wiki and exposes OpenAI-compatible chat endpoints.
 - `frontend/`: a Next.js chat UI adapted from Chatbot UI with a no-auth LLM Wiki chat page.
 
+## Knowledge Graph Preview
+
+Click the graph image to open the full-size SVG and zoom into the LLM-WIKI concept network.
+
+<a href="docs/assets/llm-wiki-graph.svg">
+  <img src="docs/assets/llm-wiki-graph.svg" alt="LLM-WIKI knowledge graph visualization" width="100%">
+</a>
+
 ## What This Project Does
 
 This repo is designed to make computational biology lecture knowledge easier to browse, connect, and query.
@@ -200,4 +208,3 @@ This repository is not an official MIT project and is not endorsed by MIT, Profe
 - Raw lecture/source files are treated as source-of-truth.
 - Generated logs and local assistant scratch folders are ignored.
 - Prefer improving the wiki through small, scored graph-quality changes rather than large unvalidated rewrites.
-
