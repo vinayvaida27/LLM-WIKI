@@ -62,6 +62,10 @@ Important files:
 - `backend/app.py`: FastAPI app, retrieval logic, and chat endpoints.
 - `llm-wiki/retrieval/`: prebuilt retrieval chunks and graph indexes.
 
+Deployment guide:
+
+- [GCP_DEPLOYMENT.md](GCP_DEPLOYMENT.md): step-by-step Google Cloud Run deployment and monitoring instructions.
+
 ## Run Locally
 
 ### 1. Start The Backend
