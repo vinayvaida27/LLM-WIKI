@@ -43,6 +43,7 @@ COPY --from=builder /app/.venv /app/.venv
 # App code + wiki data
 COPY backend/app.py        /app/app.py
 COPY llm-wiki/retrieval    /app/retrieval
+COPY backend/retrieval     /app/retrieval
 COPY llm-wiki/Wiki         /app/Wiki
 COPY llm-wiki/Raw          /app/Raw
 COPY llm-wiki/Schema       /app/Schema
