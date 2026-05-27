@@ -14,6 +14,25 @@ export const MessageMarkdown: FC<MessageMarkdownProps> = ({ content }) => {
       className="prose dark:prose-invert prose-p:leading-relaxed prose-pre:p-0 min-w-full space-y-6 break-words"
       remarkPlugins={[remarkGfm, remarkMath]}
       components={{
+        a({ node, children, href, ...props }) {
+          const isCitation = href?.startsWith("/api/llm-wiki/sources/")
+
+          return (
+            <a
+              href={href}
+              {...props}
+              target={isCitation ? "_blank" : props.target}
+              rel={isCitation ? "noopener noreferrer" : props.rel}
+              className={
+                isCitation
+                  ? "font-medium underline underline-offset-2"
+                  : props.className
+              }
+            >
+              {children}
+            </a>
+          )
+        },
         p({ children }) {
           return <p className="mb-2 last:mb-0">{children}</p>
         },
