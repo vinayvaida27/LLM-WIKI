@@ -20,3 +20,7 @@ frontend/.next/
 frontend/.supabase/
 frontend/*.log
 frontend/*.tsbuildinfo
+
+# Vector embedding cache (~12 MB binary, rebuilt on demand)
+backend/vector_cache_raw.npz
+vector_cache_raw.npz
