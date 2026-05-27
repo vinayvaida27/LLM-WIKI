@@ -49,7 +49,8 @@ from fastapi.responses import HTMLResponse, StreamingResponse
 from pydantic import BaseModel, Field
 
 from retrieval import (
-    QueryAnalyzer, QueryAnalysis,
+    QueryAnalyzer,  QueryAnalysis,
+    QueryEnhancer,  EnhancedQuery,
     RetrievalRouter, RetrievalStrategy,
     GraphTraversal,
     rerank,
@@ -79,9 +80,11 @@ DEFAULT_TOP_K = int(os.getenv("DEFAULT_TOP_K", "6"))
 MAX_CHUNK_CHARS = int(os.getenv("MAX_CHUNK_CHARS", "2500"))
 MIN_RELEVANCE_SCORE = float(os.getenv("MIN_RELEVANCE_SCORE", "2.0"))
 CITATION_BASE_URL = os.getenv("CITATION_BASE_URL", "/api/llm-wiki/sources").rstrip("/")
-ENABLE_VECTOR_SEARCH = os.getenv("ENABLE_VECTOR_SEARCH", "false").lower() == "true"
-VECTOR_EMBED_MODEL   = os.getenv("VECTOR_EMBED_MODEL", "text-embedding-3-large")
-VECTOR_CACHE_PATH    = Path(os.getenv("VECTOR_CACHE_PATH", "vector_cache_raw.npz"))
+ENABLE_VECTOR_SEARCH    = os.getenv("ENABLE_VECTOR_SEARCH",   "false").lower() == "true"
+VECTOR_EMBED_MODEL      = os.getenv("VECTOR_EMBED_MODEL",     "text-embedding-3-large")
+VECTOR_CACHE_PATH       = Path(os.getenv("VECTOR_CACHE_PATH", "vector_cache_raw.npz"))
+ENABLE_HYDE             = os.getenv("ENABLE_HYDE",            "false").lower() == "true"
+ENABLE_QUERY_EXPANSION  = os.getenv("ENABLE_QUERY_EXPANSION", "false").lower() == "true"
 CORS_ORIGINS = [o.strip() for o in os.getenv("CORS_ORIGINS", "*").split(",") if o.strip()]
 
 # Quiet LiteLLM's chatty defaults; let users opt back in via env if they want.
@@ -111,6 +114,9 @@ class ChatCompletionRequest(BaseModel):
     top_k: Optional[int] = Field(default=None, ge=1, le=20)
     stream: Optional[bool] = False
     max_tokens: Optional[int] = None
+    # Per-request query-enhancement overrides (None → use server env default)
+    enable_hyde: Optional[bool] = None
+    enable_query_expansion: Optional[bool] = None
 
 
 class SimpleChatRequest(BaseModel):
@@ -118,6 +124,9 @@ class SimpleChatRequest(BaseModel):
     top_k: Optional[int] = Field(default=DEFAULT_TOP_K, ge=1, le=20)
     model: Optional[str] = None
     temperature: Optional[float] = None
+    # Per-request query-enhancement overrides (None → use server env default)
+    enable_hyde: Optional[bool] = None
+    enable_query_expansion: Optional[bool] = None
 
 
 class Source(BaseModel):
@@ -394,6 +403,20 @@ graph_traversal = GraphTraversal(
 )
 retrieval_router = RetrievalRouter()
 
+# Query enhancer — HyDE + multi-query expansion (both off by default)
+query_enhancer = QueryEnhancer(
+    model            = MODEL_NAME,
+    enable_hyde      = ENABLE_HYDE,
+    enable_expansion = ENABLE_QUERY_EXPANSION,
+)
+if query_enhancer.active:
+    log.info(
+        "Query enhancement active: HyDE=%s expansion=%s",
+        ENABLE_HYDE, ENABLE_QUERY_EXPANSION,
+    )
+else:
+    log.info("Query enhancement disabled (set ENABLE_HYDE / ENABLE_QUERY_EXPANSION=true to enable)")
+
 # Vector search — only raw_chunks are indexed (primary source of truth)
 _raw_chunks = [d for d in corpus.docs if d.get("layer") == "raw_chunk"]
 vector_search = VectorSearch(
@@ -413,18 +436,46 @@ log.info("Retrieval pipeline ready: entity index + graph loaded")
 def _retrieve_pipeline(
     question: str,
     top_k: int,
+    enable_hyde: Optional[bool] = None,
+    enable_query_expansion: Optional[bool] = None,
 ) -> Tuple[List[Dict[str, Any]], QueryAnalysis, str]:
     """
-    Full retrieval pipeline: query analysis → entity/graph expansion
-    → BM25 (entity-aware pool size) → reranking → context packing.
+    Full retrieval pipeline:
 
-    Query analysis runs BEFORE BM25 so we can size the pool appropriately:
-    entity-matched queries use a 6× pool to ensure entity-lecture raw_chunks
-    appear even if wiki_catalog entries dominate the top results.
+      QueryAnalysis → entity/graph expansion
+      → QueryEnhancer (HyDE + expansion)   [optional, per-request or env-gated]
+      → multi-query BM25 (max-score merge)
+      → VectorSearch with HyDE query        [optional, env-gated]
+      → Reranker → ContextPacker
+
+    Per-request overrides
+    ---------------------
+    enable_hyde / enable_query_expansion accept True/False to override the
+    server-level ENABLE_HYDE / ENABLE_QUERY_EXPANSION env defaults for a
+    single request.  None means "use the server default".
+
+    HyDE:  the LLM generates a hypothetical answer paragraph.  That paragraph
+           is used as the vector-search query (lies in the same embedding space
+           as corpus docs) AND is added to the BM25 pool for keyword recall.
+
+    Expansion: 2 alternative phrasings are generated and added to the BM25
+           pool.  Results from all queries are merged by max-score so every
+           query variant contributes to recall without inflating the pool.
 
     Returns (packed_chunks, query_analysis, strategy_description).
     """
-    # 1. Query analysis first (determines pool size)
+    # Resolve per-request overrides (None → fall back to server env default)
+    _use_hyde      = ENABLE_HYDE            if enable_hyde            is None else enable_hyde
+    _use_expansion = ENABLE_QUERY_EXPANSION if enable_query_expansion is None else enable_query_expansion
+
+    # Build a per-request enhancer with the resolved settings
+    _enhancer = QueryEnhancer(
+        model            = MODEL_NAME,
+        enable_hyde      = _use_hyde,
+        enable_expansion = _use_expansion,
+    )
+
+    # 1. Entity / intent analysis (determines pool size + graph traversal)
     analysis = query_analyzer.analyze(question)
     strategy = retrieval_router.route(analysis)
 
@@ -436,32 +487,40 @@ def _retrieve_pipeline(
     if analysis.lecture_hint is not None:
         entity_lectures.add(analysis.lecture_hint)
 
-    # 3. BM25 — larger pool when entity lectures are known so raw_chunks from
-    #    those lectures are not crowded out by dense wiki_catalog/wiki_chunk entries
-    pool_size = (top_k * 6) if entity_lectures else (top_k * 3)
-    bm25_candidates = corpus.search(question, pool_size)
+    # 3. Query enhancement — runs LLM concurrently when both features are on
+    enhanced: EnhancedQuery = _enhancer.enhance(question)
 
-    # 4. Optional vector search — merge with BM25 by chunk id
-    #    Chunks appearing in both sources retain both `score` and `vector_score`
-    #    so the reranker can apply both BM25 and semantic weights.
+    # 4. Multi-query BM25 — run each variant, keep max score per chunk
+    #    Larger pool when entity lectures are known (prevents wiki_catalog
+    #    entries from crowding out entity-matched raw_chunks).
+    pool_size = (top_k * 6) if entity_lectures else (top_k * 3)
+    bm25_chunk_map: Dict[str, Dict[str, Any]] = {}
+    for bm25_q in enhanced.bm25_queries:
+        for c in corpus.search(bm25_q, pool_size):
+            cid = c["id"]
+            if cid not in bm25_chunk_map or c["score"] > bm25_chunk_map[cid].get("score", 0.0):
+                bm25_chunk_map[cid] = c
+    bm25_candidates = list(bm25_chunk_map.values())
+
+    # 5. Optional vector search — use HyDE doc when available (core HyDE benefit:
+    #    hypothesis doc is in the same embedding space as corpus documents)
+    #    Merge with BM25 by chunk id; chunks in both carry both score fields.
     if vector_search.enabled:
-        vector_results = vector_search.search(question, top_k=pool_size)
-        chunk_map: Dict[str, Dict[str, Any]] = {c["id"]: dict(c) for c in bm25_candidates}
+        vector_results = vector_search.search(enhanced.vector_query, top_k=pool_size)
         for vc in vector_results:
-            if vc["id"] in chunk_map:
-                chunk_map[vc["id"]]["vector_score"] = vc["vector_score"]
+            cid = vc["id"]
+            if cid in bm25_chunk_map:
+                bm25_chunk_map[cid]["vector_score"] = vc["vector_score"]
             else:
-                chunk_map[vc["id"]] = dict(vc)
-        candidates = list(chunk_map.values())
-        strategy_desc = strategy.description + "+vector"
+                bm25_chunk_map[cid] = dict(vc)
+        candidates = list(bm25_chunk_map.values())
     else:
         candidates = bm25_candidates
-        strategy_desc = strategy.description
 
-    # 5. Rerank
+    # 6. Rerank
     reranked = rerank(candidates, entity_lectures)
 
-    # 6. Pack context (dedup + char budget + citation labels)
+    # 7. Pack context (dedup + char budget + citation labels)
     packed = pack_context(
         reranked,
         max_chars=MAX_CHUNK_CHARS * max(top_k, 4),
@@ -469,11 +528,24 @@ def _retrieve_pipeline(
         citation_base_url=CITATION_BASE_URL,
     )
 
+    # Build strategy description — reflect all active components
+    enhancements: List[str] = []
+    if _use_hyde:
+        enhancements.append("hyde")
+    if _use_expansion:
+        enhancements.append("expansion")
+    if vector_search.enabled:
+        enhancements.append("vector")
+    strategy_desc = strategy.description
+    if enhancements:
+        strategy_desc += "+" + "+".join(enhancements)
+
     log.debug(
         "retrieve_pipeline: question=%r entities=%r strategy=%s "
-        "entity_lectures=%s pool=%d reranked=%d packed=%d",
+        "entity_lectures=%s pool=%d bm25_queries=%d reranked=%d packed=%d",
         question[:80], analysis.entities, strategy_desc,
-        sorted(entity_lectures), pool_size, len(reranked), len(packed),
+        sorted(entity_lectures), pool_size, len(enhanced.bm25_queries),
+        len(reranked), len(packed),
     )
 
     return packed, analysis, strategy_desc
@@ -722,6 +794,24 @@ def _call_llm(
         raise HTTPException(status_code=500, detail=f"LLM error: {e}") from e
 
 
+# Virtual model names accepted in the API but not routable by LiteLLM.
+# All of these map to the configured MODEL_NAME.
+_VIRTUAL_MODEL_NAMES: frozenset[str] = frozenset({"llm-wiki"})
+
+
+def _llm_model(req_model: Optional[str]) -> str:
+    """
+    Resolve a request's ``model`` field to a real LiteLLM-routable model string.
+
+    The API accepts the virtual name ``"llm-wiki"`` for OpenAI-SDK compatibility,
+    but LiteLLM cannot route it.  Any virtual or absent name falls back to the
+    server-configured MODEL_NAME env var.
+    """
+    if not req_model or req_model in _VIRTUAL_MODEL_NAMES:
+        return MODEL_NAME
+    return req_model
+
+
 def _openai_envelope(answer: str, model: str) -> Dict[str, Any]:
     return {
         "id": f"chatcmpl-{uuid.uuid4().hex}",
@@ -810,10 +900,14 @@ def health() -> Dict[str, Any]:
             "graph_edges":       sum(len(v) for v in graph_traversal._adj.values()) // 2,
             "raw_chunk_count":   raw_count,
             "layer_boost":       LAYER_BOOST,
-            "vector_search":     {
-                "enabled":       vector_search.enabled,
-                "model":         VECTOR_EMBED_MODEL,
-                "cache_path":    str(VECTOR_CACHE_PATH),
+            "vector_search": {
+                "enabled":    vector_search.enabled,
+                "model":      VECTOR_EMBED_MODEL,
+                "cache_path": str(VECTOR_CACHE_PATH),
+            },
+            "query_enhancement": {
+                "hyde":      ENABLE_HYDE,
+                "expansion": ENABLE_QUERY_EXPANSION,
             },
         },
     }
@@ -898,7 +992,11 @@ def source_detail(source_id: str) -> HTMLResponse:
 @app.post("/chat")
 def simple_chat(req: SimpleChatRequest) -> Dict[str, Any]:
     top_k = req.top_k or DEFAULT_TOP_K
-    chunks, analysis, strategy = _retrieve_pipeline(req.message, top_k)
+    chunks, analysis, strategy = _retrieve_pipeline(
+        req.message, top_k,
+        enable_hyde=req.enable_hyde,
+        enable_query_expansion=req.enable_query_expansion,
+    )
     _log_chat_request("/chat", req.message, top_k, chunks)
     refusal = _guardrail_refusal(req.message, chunks)
     if refusal:
@@ -913,7 +1011,7 @@ def simple_chat(req: SimpleChatRequest) -> Dict[str, Any]:
     messages = _build_llm_messages(req.message, _format_context(chunks))
     completion = _call_llm(
         messages=messages,
-        model=req.model or MODEL_NAME,
+        model=_llm_model(req.model),
         temperature=req.temperature if req.temperature is not None else DEFAULT_TEMPERATURE,
         stream=False,
     )
@@ -935,7 +1033,11 @@ def chat_completions(req: ChatCompletionRequest):
         raise HTTPException(status_code=400, detail="No user message found.")
 
     top_k = req.top_k or DEFAULT_TOP_K
-    chunks, analysis, strategy = _retrieve_pipeline(question, top_k)
+    chunks, analysis, strategy = _retrieve_pipeline(
+        question, top_k,
+        enable_hyde=req.enable_hyde,
+        enable_query_expansion=req.enable_query_expansion,
+    )
     _log_chat_request("/v1/chat/completions", question, top_k, chunks)
     output_model = req.model or "llm-wiki"
     refusal = _guardrail_refusal(question, chunks)
@@ -969,7 +1071,7 @@ def chat_completions(req: ChatCompletionRequest):
     if req.stream:
         stream = _call_llm(
             messages=messages,
-            model=req.model or MODEL_NAME,
+            model=_llm_model(req.model),
             temperature=temperature,
             stream=True,
             max_tokens=req.max_tokens,
@@ -1003,7 +1105,7 @@ def chat_completions(req: ChatCompletionRequest):
 
     completion = _call_llm(
         messages=messages,
-        model=req.model or MODEL_NAME,
+        model=_llm_model(req.model),
         temperature=temperature,
         stream=False,
         max_tokens=req.max_tokens,

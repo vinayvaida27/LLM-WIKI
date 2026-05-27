@@ -3,8 +3,164 @@
 import { MessageMarkdown } from "@/components/messages/message-markdown"
 import { Button } from "@/components/ui/button"
 import { TextareaAutosize } from "@/components/ui/textarea-autosize"
-import { IconPlayerStop, IconSend, IconSparkles } from "@tabler/icons-react"
-import { useRef, useState } from "react"
+import {
+  IconChevronDown,
+  IconPlayerStop,
+  IconSend,
+  IconSparkles
+} from "@tabler/icons-react"
+import { useEffect, useRef, useState } from "react"
+
+// ── Model definitions ────────────────────────────────────────────────────────
+
+const MODELS = [
+  {
+    id: "gpt-4.1-mini",
+    label: "Quick",
+    sublabel: "gpt-4.1-mini",
+    description: "Fast answers, low latency"
+  },
+  {
+    id: "gpt-4.1",
+    label: "Standard",
+    sublabel: "gpt-4.1",
+    description: "Better coding & long context"
+  },
+  {
+    id: "o3",
+    label: "Reasoning",
+    sublabel: "o3",
+    description: "Deep multi-step reasoning"
+  }
+] as const
+
+type ModelId = (typeof MODELS)[number]["id"]
+
+/** Dropdown to switch between the three backend models. */
+function ModelPicker({
+  value,
+  onChange
+}: {
+  value: ModelId
+  onChange: (id: ModelId) => void
+}) {
+  const [open, setOpen] = useState(false)
+  const ref = useRef<HTMLDivElement>(null)
+  const current = MODELS.find(m => m.id === value)!
+
+  // Close when clicking outside
+  useEffect(() => {
+    if (!open) return
+    function handleOutside(e: MouseEvent) {
+      if (ref.current && !ref.current.contains(e.target as Node)) {
+        setOpen(false)
+      }
+    }
+    document.addEventListener("mousedown", handleOutside)
+    return () => document.removeEventListener("mousedown", handleOutside)
+  }, [open])
+
+  return (
+    <div ref={ref} className="relative">
+      {/* Trigger button — matches the "Extended ∨" style */}
+      <button
+        type="button"
+        onClick={() => setOpen(v => !v)}
+        className={[
+          "flex items-center gap-1.5 rounded-md border px-3 py-1.5 text-sm font-medium",
+          "transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+          open
+            ? "border-primary bg-accent text-foreground"
+            : "border-input bg-background text-foreground hover:bg-accent hover:text-accent-foreground"
+        ].join(" ")}
+      >
+        {current.label}
+        <IconChevronDown
+          size={14}
+          className={`transition-transform duration-200 ${open ? "rotate-180" : ""}`}
+        />
+      </button>
+
+      {/* Dropdown panel */}
+      {open && (
+        <div className="absolute right-0 top-full z-50 mt-1.5 min-w-[210px] overflow-hidden rounded-lg border bg-popover shadow-lg">
+          {MODELS.map(m => {
+            const active = m.id === value
+            return (
+              <button
+                key={m.id}
+                type="button"
+                onClick={() => {
+                  onChange(m.id)
+                  setOpen(false)
+                }}
+                className={[
+                  "flex w-full items-start gap-2.5 px-3 py-2.5 text-left transition-colors hover:bg-accent",
+                  active ? "bg-accent/50" : ""
+                ].join(" ")}
+              >
+                {/* Active dot */}
+                <span className="mt-1.5 flex size-4 shrink-0 items-center justify-center">
+                  {active && (
+                    <span className="size-2 rounded-full bg-primary" />
+                  )}
+                </span>
+
+                <span className="flex flex-col gap-0.5">
+                  <span className="flex items-baseline gap-1.5">
+                    <span className="text-sm font-medium">{m.label}</span>
+                    <span className="text-muted-foreground text-[11px]">
+                      {m.sublabel}
+                    </span>
+                  </span>
+                  <span className="text-muted-foreground text-xs">
+                    {m.description}
+                  </span>
+                </span>
+              </button>
+            )
+          })}
+        </div>
+      )}
+    </div>
+  )
+}
+
+/** Pill-shaped toggle used for HyDE and Query Expansion controls. */
+function ToggleChip({
+  label,
+  active,
+  onClick,
+  tooltip
+}: {
+  label: string
+  active: boolean
+  onClick: () => void
+  tooltip: string
+}) {
+  return (
+    <button
+      title={tooltip}
+      type="button"
+      onClick={onClick}
+      className={[
+        "inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-medium",
+        "transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+        active
+          ? "border-primary bg-primary text-primary-foreground"
+          : "border-input bg-background text-muted-foreground hover:border-primary/60 hover:text-foreground"
+      ].join(" ")}
+    >
+      <span
+        className={[
+          "size-1.5 rounded-full",
+          active ? "bg-primary-foreground" : "bg-muted-foreground"
+        ].join(" ")}
+      />
+      {label}
+    </button>
+  )
+}
 
 type ChatMessage = {
   role: "user" | "assistant"
@@ -67,7 +223,10 @@ function MessageContent({ message }: { message: ChatMessage }) {
 export default function LLMWikiPage() {
   const [messages, setMessages] = useState<ChatMessage[]>(starterMessages)
   const [input, setInput] = useState("")
+  const [model, setModel] = useState<ModelId>("gpt-4.1-mini")
   const [topK, setTopK] = useState(6)
+  const [enableHyde, setEnableHyde] = useState(false)
+  const [enableExpansion, setEnableExpansion] = useState(false)
   const [isGenerating, setIsGenerating] = useState(false)
   const abortRef = useRef<AbortController | null>(null)
 
@@ -99,6 +258,7 @@ export default function LLMWikiPage() {
         },
         signal: controller.signal,
         body: JSON.stringify({
+          model,
           messages: nextMessages
             .filter(message => message.content)
             .map(message => ({
@@ -106,7 +266,9 @@ export default function LLMWikiPage() {
               content: message.content
             })),
           top_k: topK,
-          stream: true
+          stream: true,
+          enable_hyde: enableHyde,
+          enable_query_expansion: enableExpansion
         })
       })
 
@@ -193,17 +355,38 @@ export default function LLMWikiPage() {
             </div>
           </div>
 
-          <label className="flex items-center gap-2 text-sm">
-            <span className="text-muted-foreground">Top K</span>
-            <input
-              className="bg-background border-input h-9 w-16 rounded-md border px-2"
-              max={20}
-              min={1}
-              type="number"
-              value={topK}
-              onChange={event => setTopK(Number(event.target.value))}
+          <div className="flex items-center gap-3">
+            <ModelPicker value={model} onChange={setModel} />
+
+            <div className="bg-border h-5 w-px" />
+
+            <ToggleChip
+              active={enableHyde}
+              label="HyDE"
+              tooltip="Hypothetical Document Embeddings — generate a draft answer and use it as the retrieval query for deeper semantic matching"
+              onClick={() => setEnableHyde(v => !v)}
             />
-          </label>
+            <ToggleChip
+              active={enableExpansion}
+              label="Expand"
+              tooltip="Query Expansion — generate 2 alternative phrasings and merge BM25 results from all variants for broader recall"
+              onClick={() => setEnableExpansion(v => !v)}
+            />
+
+            <div className="bg-border h-5 w-px" />
+
+            <label className="flex items-center gap-2 text-sm">
+              <span className="text-muted-foreground">Top K</span>
+              <input
+                className="bg-background border-input h-9 w-16 rounded-md border px-2"
+                max={20}
+                min={1}
+                type="number"
+                value={topK}
+                onChange={event => setTopK(Number(event.target.value))}
+              />
+            </label>
+          </div>
         </div>
       </header>
 

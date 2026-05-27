@@ -100,3 +100,37 @@ python -m evaluation.run_eval --experiment-id exp_001 --description "Full pipeli
 | Avg Latency | 0.033s |
 
 ---
+
+## exp_003 — 2026-05-27 15:33 UTC
+
+**Description:** BM25+entity+graph after HyDE/expansion wiring (both disabled)
+**top_k:** 5 | **Questions:** 20
+
+| Metric | Score |
+|--------|-------|
+| Hit@5 | 0.850 |
+| MRR | 0.825 |
+| nDCG@5 | 0.822 |
+| Entity Coverage | 0.942 |
+| Raw Chunk Fraction | 0.970 |
+| Duplicate Rate | 0.000 |
+| Avg Latency | 0.022s |
+
+---
+
+## exp_004 — 2026-05-27 15:41 UTC
+
+**Description:** Per-request HyDE/expansion override wiring (both disabled)
+**top_k:** 5 | **Questions:** 20
+
+| Metric | Score |
+|--------|-------|
+| Hit@5 | 0.850 |
+| MRR | 0.825 |
+| nDCG@5 | 0.822 |
+| Entity Coverage | 0.942 |
+| Raw Chunk Fraction | 0.970 |
+| Duplicate Rate | 0.000 |
+| Avg Latency | 0.040s |
+
+---

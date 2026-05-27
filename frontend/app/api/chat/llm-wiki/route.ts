@@ -19,7 +19,9 @@ export async function POST(request: Request) {
       messages: body.messages,
       temperature: body.temperature ?? 0.2,
       top_k: body.top_k ?? 6,
-      stream: body.stream ?? true
+      stream: body.stream ?? true,
+      enable_hyde: body.enable_hyde ?? false,
+      enable_query_expansion: body.enable_query_expansion ?? false
     })
   })
 
